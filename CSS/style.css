@@ -13,12 +13,11 @@
 }
 
 * {
-    
+    color: white;
 }
 html {
-    
+    background-color: var(--Background-color);
 }
 body {
     font-family: 'ralewaythin';
-    background-color: var(--Background-color)
 }
