@@ -1,0 +1,75 @@
+@font-face {
+    font-family: 'ralewaythin';
+    src: url('/Polices/raleway-variablefont_wght-webfont.woff2') format('woff2'),
+         url('/Polices/raleway-variablefont_wght-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+:root {
+    --Main-color: #0065FC;
+    --Second-color: #DEEBFF;
+    --Background-color: #F2F2F2;
+}
+
+* {
+    color: black;
+}
+html {
+    
+}
+body {
+    font-family: 'ralewaythin';
+    margin: 0;
+    padding: 0;
+}
+
+div.container {
+    background-color: crimson;
+    height: 100vh;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 2fr 4fr 3fr 1fr;
+    grid-template-areas: 
+    "header header"
+    "main main"
+    "article1 aside"
+    "article2 article2"
+    "footer footer"
+    ;
+}
+
+header {
+    background-color: blue;
+    padding: 20px;
+    grid-area: header;
+}
+
+main {
+    background-color: blueviolet;
+    padding: 20px;
+    grid-area: main;
+}
+
+article.article1 {
+    background-color: brown;
+    padding: 20px;
+    grid-area: article1;
+}
+
+aside {
+    background-color: burlywood;
+    padding: 20px;
+    grid-area: aside;
+}
+
+article.article2 {
+ background-color: cadetblue;
+ padding: 20px;
+ grid-area: article2;
+}
+
+footer {
+    background-color: chartreuse;
+    padding: 20px;
+    grid-area: footer;
+}
