@@ -24,50 +24,101 @@ body {
     padding: 0;
 }
 
-.container {
+div#container {
     display: grid;
     grid-template-columns: 2fr 1fr;
     grid-template-rows: 1fr 2fr 5fr 4fr 2fr;
 }
 
-header {
+div.container {
+    height: 100vh;
+    grid-gap: 10px;
+    grid-column-gap: 20px;
+}
+
+div > header {
     background-color: blue;
     padding: 20px;
     grid-column-start: 1;
-    grid-column-end: 4;
+    grid-column-end: 3;
 }
 
-main {
+div > main {
     background-color: blueviolet;
     padding: 20px;
     grid-column-start: 1;
-    grid-column-end: 4;
+    grid-column-end: 3;
 }
 
-article.article1 {
-    background-color: brown;
+div > article.article1 {
+    background-color: var(--Background-color);
     padding: 20px;
     grid-column-start: 1;
     grid-column-end: 2;
+    border-radius: 10px;
+    margin: 10px;
 }
 
-aside {
-    background-color: burlywood;
+div > aside {
+    background-color: var(--Background-color);
     padding: 20px;
     grid-column-start: 2;
-    grid-column-end: 4;
+    grid-column-end: 3;
+    border-radius: 10px;
+    margin: 10px;
 }
 
-article.article2 {
+div > article.article2 {
     background-color: cadetblue;
     padding: 20px;
     grid-column-start: 1;
-    grid-column-end: 5;
+    grid-column-end: 3;
 }
 
-footer {
+div > footer {
     background-color: chartreuse;
     padding: 20px;
     grid-column-start: 1;
-    grid-column-end: 4;
+    grid-column-end: 3;
 }
+ 
+@media only screen 
+  and (max-width: 900px) and (min-width: 376px) 
+{
+    div > footer {
+        background-color: yellow;
+    }
+}
+
+@media screen 
+  and (max-device-width: 375px) 
+ {
+    div#container {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    }
+
+    div > header {
+        background-color: blue;
+    }
+
+    div > article.article1 {
+        background-color: var(--Background-color);
+        grid-row-start: 3;
+        grid-row-end: 4;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        margin: 0;
+        border-radius: 0;
+    }
+    
+    div > aside {
+        background-color: var(--Background-color);
+        grid-row-start: 4;
+        grid-row-end: 5;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        margin: 0;
+        border-radius: 0;
+    }
+ }
