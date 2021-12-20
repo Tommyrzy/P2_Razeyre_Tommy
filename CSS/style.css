@@ -37,10 +37,36 @@ div.container {
 }
 
 div > header {
-    background-color: blue;
+    background-color: white;
     padding: 20px;
     grid-column-start: 1;
     grid-column-end: 3;
+}
+
+#navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.Logo {
+    width: 60%;
+}
+
+.BoutonHybride {
+    margin-left: auto;
+}
+
+#bouton {
+    text-decoration: none;
+    margin-right: 20px;
+    padding-top: 15px;
+}
+
+#bouton:hover {
+    border-top: 1px var(--Main-color) solid;
+    color: var(--Main-color);
+    font-weight: bold;
 }
 
 div > main {
@@ -90,7 +116,7 @@ div > footer {
     }
 }
 
-@media screen 
+@media only screen 
   and (max-device-width: 375px) 
  {
     div#container {
@@ -98,8 +124,31 @@ div > footer {
         grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
     }
 
-    div > header {
-        background-color: blue;
+    #navbar {
+        flex-wrap: wrap;
+    }    
+
+    .Logo {
+        width: 30%;
+        margin-left: 125px;
+        margin-right: 125px;
+    }
+
+    .BoutonHybride {
+        margin-left: 0%;
+    }
+
+    #bouton {
+        border-bottom: var(--Second-color) solid 2px;
+        padding-bottom: 10px;
+        padding-top: 25px;
+    }
+
+    #bouton:hover {
+        border-top: none;
+        border-bottom: var(--Main-color) solid 2px;
+        color: var(--Main-color);
+        font-weight: bold;
     }
 
     div > article.article1 {
