@@ -91,7 +91,7 @@ h3 {
     font-weight: normal;
 }
 
-#Rechercher {
+#rechercher {
     display: flex;
     flex-direction: row;
     margin-top: -1%;
@@ -106,7 +106,7 @@ h3 {
     height: 25px;
 }
 
-#Ville {
+#ville {
     border-top: solid 2px lightgray;
     border-bottom: solid 2px lightgray;
     border-left: solid 2px lightgray;
@@ -125,7 +125,7 @@ h3 {
     cursor: pointer;
 }
 
-#Filtres {
+#filtres {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -148,7 +148,7 @@ h3 {
     border-radius: 0% 10% 10% 0%;
 }
 
-#billet {
+#billet, #animaux, #familial, #romantique {
     font-size: 85%;
     text-align: center;
     color: var(--Main-color);
@@ -162,49 +162,7 @@ h3 {
     border-radius: 50%;
 }
 
-#familial {
-    font-size: 85%;
-    text-align: center;
-    color: var(--Main-color);
-    background-color: var(--Second-color);
-    width: 18px;
-    height: 18px;
-    margin-top: 0.9%;
-    margin-right: -9.5%;
-    padding-top: 1%;
-    border: solid 2px var(--Second-color);
-    border-radius: 50%;
-}
-
-#romantique {
-    font-size: 85%;
-    text-align: center;
-    color: var(--Main-color);
-    background-color: var(--Second-color);
-    width: 18px;
-    height: 18px;
-    margin-top: 0.9%;
-    margin-right: -9.5%;
-    padding-top: 1%;
-    border: solid 2px var(--Second-color);
-    border-radius: 50%;
-}
-
-#animaux {
-    font-size: 85%;
-    text-align: center;
-    color: var(--Main-color);
-    background-color: var(--Second-color);
-    width: 18px;
-    height: 18px;
-    margin-top: 0.9%;
-    margin-right: -9.5%;
-    padding-top: 1%;
-    border: solid 2px var(--Second-color);
-    border-radius: 50%;
-}
-
-#logements {
+.logements {
     font-size: 75%;
     word-spacing: 1px;
 }
@@ -293,15 +251,11 @@ div > footer {
         font-weight: bold;
     }
 
-    h2 {
+    h2, h3 {
         text-align: center;
     }
 
-    h3 {
-        text-align: center;
-    }
-
-    #Rechercher {
+    #rechercher {
         justify-content: center;
     }
 
@@ -314,7 +268,7 @@ div > footer {
     }
     
 
-    #Filtres {
+    #filtres {
         flex-direction: column;
         width: 55vh;
     }
@@ -327,35 +281,14 @@ div > footer {
         padding-bottom: 2%;
     }
 
-    #billet {
+    #billet, #familial, #romantique, #animaux {
         width: 22px;
         height: 22px;
         margin-bottom: -1%;
         margin-left: 1.2%;
     }
 
-    #familial {
-        width: 22px;
-        height: 22px;
-        margin-bottom: -1%;
-        margin-left: 1.2%;
-    }
-
-    #romantique {
-        width: 22px;
-        height: 22px;
-        margin-bottom: -1%;
-        margin-left: 1.2%;
-    }
-
-    #animaux {
-        width: 22px;
-        height: 22px;
-        margin-bottom: -1%;
-        margin-left: 1.2%;
-    }
-
-    #logements {
+    .logements {
         font-size: 70%;
     }
 
