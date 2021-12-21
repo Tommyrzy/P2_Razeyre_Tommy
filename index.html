@@ -16,13 +16,38 @@
 
             <nav id="navbar">
                 <a href="#"> <img class="Logo" src="/Images/Logo/Booki.png" alt="Logo de l'application Booki"></a>
-                <div class="BoutonHybride"></div>
+                <div class="BoutonHybride">
                     <a id="bouton" href="#">Hébergements</a>
                     <a id="bouton" href="#">Activités</a>
+                </div>
             </nav>
 
         </header>
-        <main class="search">bloc2</main>
+
+        <main class="search">
+
+            <div id="search">
+                <h2>Trouver votre hébergements pour des vacances de rêve</h2>
+                <h3>En plein centre ville ou en pleine nature</h3>
+                <form method="post" action="traitement.php">
+                    <div id="Rechercher">
+                        <p>
+                            <label for="Ville"><i id="localisation" class="fas fa-map-marker-alt"></i></label>  <input type="text" name="Ville" id="Ville">
+                        </p>
+                        <button class="button">Rechercher</button>
+                    </div>
+                </form>
+            </div>
+            <div id="Filtres">
+                <p>Filtres</p>
+                <i id="billet" class="fas fa-money-bill-wave"></i><a id="liens" href="#">Economique</a>
+                <i id="familial" class="fas fa-child"></i><a id="liens" href="#">Familial</a>
+                <i id="romantique" class="fas fa-heart"></i><a id="liens" href="#">Romantique</a>
+                <i id="animaux" class="fas fa-dog"></i><a id="liens" href="#">Animaux autorisés</a>
+            </div>
+            <p id="logements"><i id="info" class="fas fa-info-circle"></i>Plus de 500 logements sont disponibles dans cette ville</p>    
+        </main>
+
         <article class="article1">bloc3</article>
         <aside class="aside">bloc4</aside>
         <article class="article2">bloc5</article>

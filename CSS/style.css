@@ -16,7 +16,8 @@
     color: black;
 }
 html {
-    
+    margin-left: 2%;
+    margin-right: 2%;
 }
 body {
     font-family: 'ralewaythin';
@@ -50,16 +51,19 @@ div > header {
 }
 
 .Logo {
-    width: 60%;
+    width: 35%;
+    margin-left: 5%;
+    margin-top: 5%;
 }
 
 .BoutonHybride {
     margin-left: auto;
+    font-size: 75%;
 }
 
 #bouton {
     text-decoration: none;
-    margin-right: 20px;
+    margin-right: 25px;
     padding-top: 15px;
 }
 
@@ -70,10 +74,143 @@ div > header {
 }
 
 div > main {
-    background-color: blueviolet;
+    background-color: white;
     padding: 20px;
     grid-column-start: 1;
     grid-column-end: 3;
+}
+
+h2 {
+    font-weight: bold;
+    font-size: 95%;
+    margin-top: -2%;
+}
+
+h3 {
+    font-size: 75%;
+    font-weight: normal;
+}
+
+#Rechercher {
+    display: flex;
+    flex-direction: row;
+    margin-top: -1%;
+}
+
+#localisation {
+    font-size: 131%;
+    background-color: lightgray;
+    border: 2px solid lightgray;
+    border-width: 7px;
+    border-radius: 10px 0px 0px 10px;
+    height: 25px;
+}
+
+#Ville {
+    border-top: solid 2px lightgray;
+    border-bottom: solid 2px lightgray;
+    border-left: solid 2px lightgray;
+    border-right: none;
+    height: 33px;
+    margin-left: -4px;
+}
+
+.button {
+    margin-top: 16px;
+    height: 39px;
+    background-color: var(--Main-color);
+    color: white;
+    border: none;
+    border-radius: 0% 10% 10% 0%;
+    cursor: pointer;
+}
+
+#Filtres {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 75vh;
+    font-weight: bold;
+    font-size: 85%;
+}
+
+#liens {
+    text-decoration: none;
+    font-size: 85%;
+    margin-top: 7px;
+    margin-bottom: 5px;
+    padding-top: 7px;
+    padding-left: 2%;
+    padding-right: 2%;
+    border-top: solid 2px lightgray;
+    border-bottom: solid 2px lightgray;
+    border-right: solid 2px lightgray;
+    border-radius: 0% 10% 10% 0%;
+}
+
+#billet {
+    font-size: 85%;
+    text-align: center;
+    color: var(--Main-color);
+    background-color: var(--Second-color);
+    width: 18px;
+    height: 18px;
+    margin-top: 0.9%;
+    margin-right: -9.5%;
+    padding-top: 1%;
+    border: solid 2px var(--Second-color);
+    border-radius: 50%;
+}
+
+#familial {
+    font-size: 85%;
+    text-align: center;
+    color: var(--Main-color);
+    background-color: var(--Second-color);
+    width: 18px;
+    height: 18px;
+    margin-top: 0.9%;
+    margin-right: -9.5%;
+    padding-top: 1%;
+    border: solid 2px var(--Second-color);
+    border-radius: 50%;
+}
+
+#romantique {
+    font-size: 85%;
+    text-align: center;
+    color: var(--Main-color);
+    background-color: var(--Second-color);
+    width: 18px;
+    height: 18px;
+    margin-top: 0.9%;
+    margin-right: -9.5%;
+    padding-top: 1%;
+    border: solid 2px var(--Second-color);
+    border-radius: 50%;
+}
+
+#animaux {
+    font-size: 85%;
+    text-align: center;
+    color: var(--Main-color);
+    background-color: var(--Second-color);
+    width: 18px;
+    height: 18px;
+    margin-top: 0.9%;
+    margin-right: -9.5%;
+    padding-top: 1%;
+    border: solid 2px var(--Second-color);
+    border-radius: 50%;
+}
+
+#logements {
+    font-size: 75%;
+    word-spacing: 1px;
+}
+
+#info {
+    color: var(--Main-color);
 }
 
 div > article.article1 {
@@ -119,6 +256,11 @@ div > footer {
 @media only screen 
   and (max-device-width: 375px) 
  {
+    html {
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+
     div#container {
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
@@ -149,6 +291,72 @@ div > footer {
         border-bottom: var(--Main-color) solid 2px;
         color: var(--Main-color);
         font-weight: bold;
+    }
+
+    h2 {
+        text-align: center;
+    }
+
+    h3 {
+        text-align: center;
+    }
+
+    #Rechercher {
+        justify-content: center;
+    }
+
+    #localisation {
+        margin-right: -1%;
+    }
+
+    .button {
+        margin-left: -1%;
+    }
+    
+
+    #Filtres {
+        flex-direction: column;
+        width: 55vh;
+    }
+
+    #liens {
+        margin-top: -6.9%;
+        margin-left: 5%;
+        margin-right: 60%;
+        padding-left: 5%;
+        padding-bottom: 2%;
+    }
+
+    #billet {
+        width: 22px;
+        height: 22px;
+        margin-bottom: -1%;
+        margin-left: 1.2%;
+    }
+
+    #familial {
+        width: 22px;
+        height: 22px;
+        margin-bottom: -1%;
+        margin-left: 1.2%;
+    }
+
+    #romantique {
+        width: 22px;
+        height: 22px;
+        margin-bottom: -1%;
+        margin-left: 1.2%;
+    }
+
+    #animaux {
+        width: 22px;
+        height: 22px;
+        margin-bottom: -1%;
+        margin-left: 1.2%;
+    }
+
+    #logements {
+        font-size: 70%;
     }
 
     div > article.article1 {
