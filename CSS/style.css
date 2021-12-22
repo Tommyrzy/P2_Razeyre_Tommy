@@ -16,6 +16,8 @@
     color: black;
 }
 html {
+    display: flex;
+    justify-content: center;
     margin-left: 2%;
     margin-right: 2%;
 }
@@ -23,6 +25,11 @@ body {
     font-family: 'ralewaythin';
     margin: 0;
     padding: 0;
+    max-width: 992px;
+}
+
+a {
+    text-decoration: none;
 }
 
 div#container {
@@ -42,12 +49,14 @@ div > header {
     padding: 20px;
     grid-column-start: 1;
     grid-column-end: 3;
+    margin-top: 5px;
 }
 
 #navbar {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    align-items: center;
 }
 
 .Logo {
@@ -62,12 +71,31 @@ div > header {
 }
 
 #bouton {
-    text-decoration: none;
     margin-right: 25px;
-    padding-top: 15px;
 }
 
-#bouton:hover {
+.Menubutton1 {
+    width: 100px;
+    padding: 30px 10px 10px 20px;
+    margin-top: 10px;
+}
+
+.Menubutton1:hover {
+    color: var(--Main-color);
+    font-weight: bold;
+}
+
+.Menubutton1:active {
+    border-top: 1px var(--Main-color) solid;
+}
+
+.Menubutton2 {
+    width: 100px;
+    padding: 30px 10px 10px 20px;
+    margin-top: 10px;
+}
+
+.Menubutton2:hover {
     border-top: 1px var(--Main-color) solid;
     color: var(--Main-color);
     font-weight: bold;
@@ -97,7 +125,7 @@ h3 {
     margin-top: -1%;
 }
 
-#localisation {
+.localisation {
     font-size: 131%;
     background-color: lightgray;
     border: 2px solid lightgray;
@@ -106,7 +134,7 @@ h3 {
     height: 25px;
 }
 
-#ville {
+.ville {
     border-top: solid 2px lightgray;
     border-bottom: solid 2px lightgray;
     border-left: solid 2px lightgray;
@@ -128,38 +156,129 @@ h3 {
 #filtres {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    width: 75vh;
     font-weight: bold;
-    font-size: 85%;
 }
 
-#liens {
-    text-decoration: none;
-    font-size: 85%;
-    margin-top: 7px;
-    margin-bottom: 5px;
-    padding-top: 7px;
-    padding-left: 2%;
-    padding-right: 2%;
+div.filter1 {
+    display: flex;
+    flex-direction: row;
+}
+
+.billet {
+    display: flex;
+    flex-direction: row;
+    margin-top: 9px;
+    margin-bottom: 15px;
+    margin-right: 10px;
+    margin-left: 15px;
+    padding-top: 5px;
+    padding-right: 10px;
     border-top: solid 2px lightgray;
     border-bottom: solid 2px lightgray;
     border-right: solid 2px lightgray;
-    border-radius: 0% 10% 10% 0%;
+    border-radius: 15px;
 }
 
-#billet, #animaux, #familial, #romantique {
-    font-size: 85%;
+.liens {
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.money {
+    font-size: 12px;
     text-align: center;
-    color: var(--Main-color);
     background-color: var(--Second-color);
-    width: 18px;
-    height: 18px;
-    margin-top: 0.9%;
-    margin-right: -9.5%;
-    padding-top: 1%;
-    border: solid 2px var(--Second-color);
+    color: var(--Main-color);
+    width: 25px;
+    height: 20px;
     border-radius: 50%;
+    margin-top: -5px;
+    margin-right: 15px;
+    padding: 8px 0px 0px 0px;
+}
+
+.familial {
+    display: flex;
+    flex-direction: row;
+    margin-top: 9px;
+    margin-bottom: 15px;
+    margin-right: 10px;
+    margin-left: 15px;
+    padding-top: 5px;
+    padding-right: 10px;
+    border-top: solid 2px lightgray;
+    border-bottom: solid 2px lightgray;
+    border-right: solid 2px lightgray;
+    border-radius: 15px;
+}
+
+.family {
+    font-size: 12px;
+    text-align: center;
+    background-color: var(--Second-color);
+    color: var(--Main-color);
+    width: 25px;
+    height: 20px;
+    border-radius: 50%;
+    margin-top: -5px;
+    margin-right: 15px;
+    padding: 8px 0px 0px 0px;
+}
+
+.romantique {
+    display: flex;
+    flex-direction: row;
+    margin-top: 9px;
+    margin-bottom: 15px;
+    margin-right: 10px;
+    margin-left: 15px;
+    padding-top: 5px;
+    padding-right: 10px;
+    border-top: solid 2px lightgray;
+    border-bottom: solid 2px lightgray;
+    border-right: solid 2px lightgray;
+    border-radius: 15px;
+}
+
+.heart {
+    font-size: 12px;
+    text-align: center;
+    background-color: var(--Second-color);
+    color: var(--Main-color);
+    width: 25px;
+    height: 20px;
+    border-radius: 50%;
+    margin-top: -5px;
+    margin-right: 15px;
+    padding: 8px 0px 0px 0px;
+}
+
+.animaux {
+    display: flex;
+    flex-direction: row;
+    margin-top: 9px;
+    margin-bottom: 15px;
+    margin-right: 10px;
+    margin-left: 15px;
+    padding-top: 5px;
+    padding-right: 10px;
+    border-top: solid 2px lightgray;
+    border-bottom: solid 2px lightgray;
+    border-right: solid 2px lightgray;
+    border-radius: 15px;
+}
+
+.dog {
+    font-size: 12px;
+    text-align: center;
+    background-color: var(--Second-color);
+    color: var(--Main-color);
+    width: 25px;
+    height: 20px;
+    border-radius: 50%;
+    margin-top: -5px;
+    margin-right: 15px;
+    padding: 8px 0px 0px 0px;
 }
 
 .logements {
@@ -167,7 +286,7 @@ h3 {
     word-spacing: 1px;
 }
 
-#info {
+.info {
     color: var(--Main-color);
 }
 
@@ -177,7 +296,110 @@ div > article.article1 {
     grid-column-start: 1;
     grid-column-end: 2;
     border-radius: 10px;
-    margin: 10px;
+    margin: -20px 10px 10px 10px;
+}
+
+#hebergements {
+    display: flex;
+    flex-direction: column;
+    width: 575px;
+    height: 350px;
+}
+
+.cardshebergements {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    height: 300px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.card1 {
+    background-color: white;
+    box-shadow: 0px 0px 10px 0px grey;
+    width: 165px;
+    height: 130px;
+    margin-left: 10px;
+    border-radius: 15px;
+}
+
+.image1 {
+    width: 159px;
+    height: 75px;
+    margin-top: 3px;
+    margin-left: 3px;
+    border-radius: 15px 15px 0px 0px;
+}
+
+.cardtext1 {
+    margin-top: -11px;
+    margin-left: 1px;
+    margin-right: 1px;
+    padding-left: 5px;
+    height: 45px;
+    border-radius: 0px 0px 15px 15px;
+}
+
+.descriptiontext1 {
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.description2text1 {
+    margin-top: -8px;
+    font-size: 10px;
+}
+
+.card2 {
+    background-color: white;
+    box-shadow: 0px 0px 10px 0px grey;
+    width: 165px;
+    height: 130px;
+    margin-left: 10px;
+    border-radius: 15px;
+}
+
+.card3 {
+    background-color: white;
+    box-shadow: 0px 0px 10px 0px grey;
+    width: 165px;
+    height: 130px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 15px;
+}
+
+.card4 {
+    background-color: white;
+    box-shadow: 0px 0px 10px 0px grey;
+    width: 165px;
+    height: 130px;
+    margin-left: 10px;
+    margin-top: 35px;
+    border-radius: 15px;
+}
+
+.card5 {
+    background-color: white;
+    box-shadow: 0px 0px 10px 0px grey;
+    width: 165px;
+    height: 130px;
+    margin-left: 10px;
+    margin-top: 35px;
+    border-radius: 15px;
+}
+
+.card6 {
+    background-color: white;
+    box-shadow: 0px 0px 10px 0px grey;
+    width: 165px;
+    height: 130px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 35px;
+    border-radius: 15px;
 }
 
 div > aside {
@@ -186,7 +408,7 @@ div > aside {
     grid-column-start: 2;
     grid-column-end: 3;
     border-radius: 10px;
-    margin: 10px;
+    margin: -20px 10px 10px 10px;
 }
 
 div > article.article2 {
@@ -204,15 +426,15 @@ div > footer {
 }
  
 @media only screen 
-  and (max-width: 900px) and (min-width: 376px) 
-{
+  and (max-width: 991px) and (min-width: 768px) 
+{  
     div > footer {
         background-color: yellow;
     }
 }
 
 @media only screen 
-  and (max-device-width: 375px) 
+  and (max-device-width: 767px) 
  {
     html {
         margin-left: 2%;
@@ -269,24 +491,60 @@ div > footer {
     
 
     #filtres {
+        display: flex;
         flex-direction: column;
-        width: 55vh;
+        flex-wrap: wrap;
     }
-
+/*
     #liens {
         margin-top: -6.9%;
         margin-left: 5%;
         margin-right: 60%;
+        margin-bottom: 2%;
         padding-left: 5%;
         padding-bottom: 2%;
+        font-size: 75%;
+    }
+*/
+    div.filter1 {
+        display: flex;
+        flex-direction: row;
     }
 
-    #billet, #familial, #romantique, #animaux {
-        width: 22px;
-        height: 22px;
+    .billet {
+        display: flex;
+        flex-direction: row;
+        width: 7%;
+        margin-bottom: -1%;
+        margin-left: 1.2%;
+        margin-right: 75px;
+        border: 1px solid black;
+    }
+
+    .familial {
+        display: flex;
+        flex-direction: row;
+        width: 7%;
         margin-bottom: -1%;
         margin-left: 1.2%;
     }
+
+    .romantique {
+        display: flex;
+        flex-direction: row;
+        width: 7%;
+        margin-bottom: -1%;
+        margin-left: 1.2%;
+    }
+
+    .animaux {
+        display: flex;
+        flex-direction: row;
+        width: 7%;
+        margin-bottom: -1%;
+        margin-left: 1.2%;
+    }
+
 
     .logements {
         font-size: 70%;
