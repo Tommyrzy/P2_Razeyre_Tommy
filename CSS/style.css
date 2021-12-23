@@ -21,6 +21,7 @@ html {
     margin-left: 2%;
     margin-right: 2%;
 }
+
 body {
     font-family: 'ralewaythin';
     margin: 0;
@@ -76,7 +77,7 @@ div > header {
 
 .Menubutton1 {
     width: 100px;
-    padding: 30px 10px 10px 20px;
+    padding: 39px 10px 10px 20px;
     margin-top: 10px;
 }
 
@@ -88,7 +89,7 @@ div > header {
 
 .Menubutton2 {
     width: 100px;
-    padding: 30px 10px 10px 20px;
+    padding: 39px 10px 10px 20px;
     margin-top: 10px;
 }
 
@@ -136,6 +137,7 @@ h3 {
     border-bottom: solid 2px lightgray;
     border-left: solid 2px lightgray;
     border-right: none;
+    width: 165px;
     height: 33px;
     margin-left: -4px;
 }
@@ -316,11 +318,15 @@ div > article.article1 {
 
 .card1 {
     background-color: white;
-    box-shadow: 0px 0px 10px 0px grey;
+    box-shadow: 0 0 10px 0 grey;
     width: 165px;
     height: 130px;
     margin-left: 10px;
     border-radius: 15px;
+}
+
+.cardimage1 {
+    width: 165px;
 }
 
 .image1 {
@@ -352,7 +358,7 @@ div > article.article1 {
 
 .card2 {
     background-color: white;
-    box-shadow: 0px 0px 10px 0px grey;
+    box-shadow: 0 0 10px 0 grey;
     width: 165px;
     height: 130px;
     margin-left: 10px;
@@ -361,7 +367,7 @@ div > article.article1 {
 
 .card3 {
     background-color: white;
-    box-shadow: 0px 0px 10px 0px grey;
+    box-shadow: 0 0 10px 0 grey;
     width: 165px;
     height: 130px;
     margin-left: 10px;
@@ -371,7 +377,7 @@ div > article.article1 {
 
 .card4 {
     background-color: white;
-    box-shadow: 0px 0px 10px 0px grey;
+    box-shadow: 0 0 10px 0 grey;
     width: 165px;
     height: 130px;
     margin-left: 10px;
@@ -381,7 +387,7 @@ div > article.article1 {
 
 .card5 {
     background-color: white;
-    box-shadow: 0px 0px 10px 0px grey;
+    box-shadow: 0 0 10px 0 grey;
     width: 165px;
     height: 130px;
     margin-left: 10px;
@@ -391,7 +397,7 @@ div > article.article1 {
 
 .card6 {
     background-color: white;
-    box-shadow: 0px 0px 10px 0px grey;
+    box-shadow: 0 0 10px 0 grey;
     width: 165px;
     height: 130px;
     margin-left: 10px;
@@ -414,6 +420,140 @@ div > aside {
     margin: -20px 10px 10px 10px;
 }
 
+#populaire {
+    display: flex;
+    flex-direction: column;
+    height: 350px;
+    width: 240px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cardspopulaire {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 340px;
+    width: 220px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cardp1 {
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 95px;
+    width: 220px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px 0 grey;
+}
+
+.cardimagep1 {
+    width: auto;
+}
+
+.imagep1 {
+    width: 90px;
+    height: 89px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    margin-left: 3px;
+    border-radius: 15px 0px 0px 15px;
+}
+
+.cardtextp1 {
+    width: auto;
+    margin-left: 5px;
+}
+
+.descriptiontextp1 {
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.description2textp1 {
+    font-size: 10px;
+}
+
+.cardp2 {
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 95px;
+    width: 220px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px 0 grey;
+}
+
+
+.cardimagep2 {
+    width: auto;
+}
+
+.imagep2 {
+    width: 90px;
+    height: 89px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    margin-left: 3px;
+    border-radius: 15px 0px 0px 15px;
+}
+
+.cardtextp2 {
+    width: auto;
+    margin-left: 5px;
+}
+
+.descriptiontextp2 {
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.description2textp2 {
+    font-size: 10px;
+}
+
+.cardp3 {
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 95px;
+    width: 220px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px 0 grey;
+}
+
+.cardimagep3 {
+    width: auto;
+}
+
+.imagep3 {
+    width: 90px;
+    height: 89px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    margin-left: 3px;
+    border-radius: 15px 0px 0px 15px;
+}
+
+.cardtextp3 {
+    width: auto;
+    margin-left: 5px;
+}
+
+.descriptiontextp3 {
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.description2textp3 {
+    font-size: 10px;
+}
+
 div > article.article2 {
     background-color: cadetblue;
     padding: 20px;
@@ -430,33 +570,81 @@ div > footer {
  
 @media only screen 
   and (max-width: 991px) and (min-width: 768px) 
-{  
-    div > footer {
-        background-color: yellow;
+{ 
+    
+    div#container {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
     }
+
+    div > article.article1 {
+        background-color: var(--Background-color);
+        grid-row-start: 4;
+        grid-row-end: 5;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        margin: 0;
+        border-radius: 0;
+    }
+
+    #hebergements {
+        width: 690px;
+        height: 350px;
+    }
+    
+  
+    div > aside {
+        background-color: var(--Background-color);
+        grid-row-start: 3;
+        grid-row-end: 4;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        margin: 0;
+        border-radius: 0;
+    }
+
+    #populaire {
+        height: 120px;
+        width: 690px;
+    }  
+
+    .cardspopulaire {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        height: 100px;
+        width: 670px;
+    }
+    
 }
 
 @media only screen 
   and (max-device-width: 767px) 
  {
     html {
-        margin-left: 2%;
-        margin-right: 2%;
+        
     }
 
+    body {
+        max-width: 767px;
+    }
+    
     div#container {
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
     }
 
     #navbar {
-        flex-wrap: wrap;
-    }    
+        display: flex;
+        flex-direction: column;
+    }
 
     .Logo {
+        display: flex;
+        flex-direction: column;
         width: 30%;
-        margin-left: 125px;
-        margin-right: 125px;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .BoutonHybride {
@@ -487,6 +675,12 @@ div > footer {
     #localisation {
         margin-right: -1%;
     }
+
+    .ville {
+        width: 100px;
+        height: 33px;
+    }
+    
 
     .button {
         margin-left: -1%;
@@ -555,6 +749,88 @@ div > footer {
 
     div > article.article1 {
         background-color: var(--Background-color);
+        grid-row-start: 4;
+        grid-row-end: 5;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        margin: 0;
+        border-radius: 0;
+    }
+
+    #hebergements {
+        display: flex;
+        flex-direction: column;
+        background-color: chartreuse;
+        width: auto;
+        height: auto;
+    }
+    
+    .cardshebergements {
+        background-color: chocolate;
+        display: flex;
+        flex-direction: column;
+        width: auto;
+        height: auto;
+    }
+
+    .card1 {
+        background-color: cornflowerblue;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-bottom: 10px;
+        width: auto;
+        height: auto;
+    }
+/*
+    .image1 {
+        width: auto;
+        margin-left: 2px;
+        margin-right: 20px;
+    }
+
+    .card2 {
+        margin-bottom: 10px;
+        width: auto;
+        height: auto;
+        margin-left: 2px;
+        margin-right: 2px;
+    }
+
+    .card3 {
+        margin-bottom: 10px;
+        width: auto;
+        height: auto;
+        margin-left: 2px;
+        margin-right: 2px;
+    }
+
+    .card4 {
+        margin-top: 5px;
+        width: auto;
+        height: auto;
+        margin-left: 2px;
+        margin-right: 2px;
+    }
+
+    .card5 {
+        margin-top: 10px;
+        width: auto;
+        height: auto;
+        margin-left: 2px;
+        margin-right: 2px;
+    }
+    
+    .card6 {
+        margin-top: 10px;
+        width: auto;
+        height: auto;
+        margin-left: 2px;
+        margin-right: 2px;
+    }
+*/
+    div > aside {
+        background-color: var(--Background-color);
         grid-row-start: 3;
         grid-row-end: 4;
         grid-column-start: 1;
@@ -562,14 +838,53 @@ div > footer {
         margin: 0;
         border-radius: 0;
     }
+
+    #populaire {
+        background-color: brown;
+        width: auto;
+    }
+
+    .cardspopulaire {
+        display: flex;
+        background-color: cadetblue;
+        width: auto;
+        margin-left: 0;
+        margin-right: 0;
+    }
     
-    div > aside {
-        background-color: var(--Background-color);
-        grid-row-start: 4;
-        grid-row-end: 5;
-        grid-column-start: 1;
-        grid-column-end: 3;
-        margin: 0;
-        border-radius: 0;
+    .cardp1 {
+        width: auto;
+    }
+
+    .descriptiontextp1 {
+        font-size: auto;
+    }
+    
+    .description2textp1 {
+        font-size: auto;
+    }
+
+    .cardp2 {
+        width: auto;
+    }
+
+    .descriptiontextp2 {
+        font-size: auto;
+    }
+    
+    .description2textp2 {
+        font-size: auto;
+    }
+
+    .cardp3 {
+        width: auto;
+    }
+
+    .descriptiontextp3 {
+        font-size: auto;
+    }
+    
+    .description2textp3 {
+        font-size: auto;
     }
  }
