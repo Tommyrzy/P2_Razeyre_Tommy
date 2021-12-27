@@ -228,11 +228,11 @@ div > article.article1 {
 }
 
 .image1 {
-    background-color: brown;
-    width: 164px;
-    height: 75px;
+    text-align: center;
+    width: 95%;
+    height: 80px;
     margin-top: 3px;
-    margin-left: 3px;
+    margin-left: 2%;
     border-radius: 15px 15px 0px 0px;
 }
 
@@ -243,28 +243,28 @@ div > article.article1 {
 }
 
 .descriptiontext1 {
-    font-size: 12px;
+    margin-left: 8px;
+    margin-top: 7px;
+    font-size: 80%;
     font-weight: bold;
 }
 
 .description2text1 {
-    margin-top: -8px;
-    font-size: 10px;
+    margin-top: -10px;
+    margin-left: 8px;
+    font-size: 70%;
 }
 
 .card1:hover {
-
-}
-
-.cardimage2 {
-    background-color: cadetblue;
-    height: 85px;
+    width: 200px;
+    height: 150px;
+    background-color: var(--Second-color);
 }
 
 .card4, .card5, .card6 {
     background-color: white;
     box-shadow: 0 0 10px 0 grey;
-    width: 165px;
+    width: 170px;
     height: 130px;
     margin-top: 35px;
     border-radius: 15px;
@@ -274,6 +274,7 @@ div > article.article1 {
     font-weight: bold;
     font-size: 12px;
     height: 14px;
+    margin-top: 30px;
 }
 
 .afficher:hover {
@@ -323,11 +324,11 @@ div > aside {
 }
 
 .cardimagep1 {
-    width: auto;
+    width: 50%;
 }
 
 .imagep1 {
-    width: 90px;
+    width: 85%;
     height: 89px;
     padding-top: 3px;
     padding-bottom: 3px;
@@ -336,7 +337,7 @@ div > aside {
 }
 
 .cardtextp1 {
-    width: auto;
+    width: 50%;
     margin-left: 5px;
 }
 
@@ -408,10 +409,178 @@ div > aside {
 }
 
 div > article.article2 {
-    background-color: cadetblue;
     padding: 20px;
     grid-column-start: 1;
     grid-column-end: 3;
+}
+
+.cardsactivity {
+    display: flex;
+    flex-direction: row;
+}
+
+.cardsb1 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 50%;
+    height: 400px;
+}
+
+.carda1 {
+    background-color: white;
+    box-shadow: 0 0 10px 0 grey;
+    border-radius: 15px;
+    height: 340px;
+    width: 45%;
+}
+
+.imagea1 {
+    width: 100%;
+    height: 300px;
+    border-radius: 15px 15px 0 0;
+}
+
+.cardtexta1 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+.cardsbloc1 {
+    display: flex;
+    flex-direction: column;
+    margin-left: 40px;
+}
+
+.carda2 {
+    background-color: white;
+    box-shadow: 0 0 10px 0 grey;
+    border-radius: 15px;
+    width: 130%;
+    height: 190px;
+}
+
+.imagea2 {
+    width: 100%;
+    height: 150px;
+    border-radius: 15px 15px 0 0;
+}
+
+.cardtexta2 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+.carda3 {
+    background-color: white;
+    box-shadow: 0 0 10px 0 grey;
+    border-radius: 15px;
+    width: 130%;
+    height: 120px;
+    margin-top: 30px;
+}
+
+.imagea3 {
+    width: 100%;
+    height: 80px;
+    border-radius: 15px 15px 0 0;
+}
+
+.cardtexta3 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+.cardsb2 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 50%;
+    height: 400px;
+}
+
+.carda4 {
+    background-color: white;
+    box-shadow: 0 0 10px 0 grey;
+    border-radius: 15px;
+    height: 340px;
+    width: 45%;
+}
+
+.imagea4 {
+    width: 100%;
+    height: 300px;
+    border-radius: 15px 15px 0 0;
+}
+
+.cardtexta4 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+.cardsbloc2 {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+}
+
+.carda5 {
+    background-color: white;
+    box-shadow: 0 0 10px 0 grey;
+    border-radius: 15px;
+    height: 150px;
+    width: 100%;
+    margin-left: 20px;
+}
+
+.imagea5 {
+    width: 100%;
+    height: 110px;
+    border-radius: 15px 15px 0 0;
+}
+
+.cardtexta5 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+.carda6 {
+    background-color: white;
+    box-shadow: 0 0 10px 0 grey;
+    border-radius: 15px;
+    height: 160px;
+    width: 100%;
+    margin-top: 30px;
+    margin-left: 20px;
+}
+
+.imagea6 {
+    width: 100%;
+    height: 120px;
+    border-radius: 15px 15px 0 0;
+}
+
+.cardtexta6 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    font-weight: bold;
+    font-size: 13px;
 }
 
 div > footer {
@@ -440,16 +609,19 @@ div > footer {
     }
 
     #hebergements {
-        width: 690px;
-        height: 350px;
+        width: auto;
     }
-
+    
     .cardshebergements {
-        width: 650px;
         margin-left: auto;
         margin-right: auto;
+        width: 650px;
     }
-  
+
+    .card1, .card2, .card3 {
+        background-color: white;
+    }
+
     div > aside {
         background-color: var(--Background-color);
         grid-row-start: 3;
@@ -612,23 +784,26 @@ div > footer {
     }
 
     #hebergements {
-        background-color: cornflowerblue;
         width: auto;
-        height: 1000px;
     }
 
     .cardshebergements {
-        background-color: crimson;
         display: flex;
         flex-direction: column;
-        height: 920px;
+        flex-wrap: nowrap;
+        height: auto;
         width: auto;
     }
 
-    .card1 {
-        background-color: cyan;
-        width: auto; 
-        height: auto;
+    .card1, .card2, .card3 {
+        width: auto;
+        margin-bottom: 10px;
+    }
+
+    .card4, .card5, .card6 {
+        width: auto;
+        margin-top: 0px;
+        margin-bottom: 10px;
     }
 
     div > aside {
@@ -689,54 +864,42 @@ div > footer {
     .description2textp3 {
         font-size: auto;
     }
- }
 
-/*
-    #hebergements {
+    div > article.article2 {
+        height: 1200px;
+    }
+
+    .cardsactivity {
         display: flex;
         flex-direction: column;
-        background-color: chartreuse;
-        width: auto;
+        height: 700px;
+    }
+
+    .cardsb1, .cardsb2 {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        width: 100%;
+        height: 600px;
+    }
+
+    .cardsbloc1, .cardsbloc2 {
         margin-left: 0;
-        margin-right: 0;
     }
-    
-    .cardshebergements {
-        background-color: chocolate;
-        display: flex;
-        flex-direction: column;
-        width: auto;
-        height: 20000px;
-    }
-
-    .card1 {
-        background-color: cornflowerblue;
-        margin-bottom: 10px;
-        width: auto;
-    }
-
-    .cardimage1 {
-        background-color: yellow;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        width: auto;
+    .carda1, .carda2, .carda3, .carda4, .carda5, .carda6 {
+        background-color: white;
+        box-shadow: 0 0 10px 0 grey;
+        border-radius: 15px;
+        height: 180px;
+        width: 100%;
         margin-left: auto;
         margin-right: auto;
-    }
-
-    .image1 {
-        margin-left: 0;
-    }
-
-    .descriptiontext1 {
-        font-size: auto;
-    }
-
-    .card2 {
-        background-color: cornflowerblue;
         margin-bottom: 10px;
-        width: auto;
-        margin-left: 0;
+        margin-top: 0px;
     }
-*/
+
+    .imagea1, .imagea2, .imagea3, .imagea4 {
+        height: 130px;
+        border-radius: 15px 15px 0 0;
+    }
+ }
