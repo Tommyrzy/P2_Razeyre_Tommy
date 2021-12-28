@@ -99,7 +99,7 @@ h3 {
     font-weight: normal;
 }
 
-#rechercher {
+#searchbar {
     display: flex;
     flex-direction: row;
     margin-top: -10px;
@@ -114,7 +114,7 @@ h3 {
     height: 25px;
 }
 
-.ville {
+.city {
     border-top: solid 2px lightgray;
     border-bottom: solid 2px lightgray;
     border-left: solid 2px lightgray;
@@ -134,7 +134,7 @@ h3 {
     cursor: pointer;
 }
 
-#filtres {
+#filters {
     display: flex;
     flex-direction: row;
     font-weight: bold;
@@ -145,12 +145,12 @@ div.filter1 {
     flex-direction: row;
 }
 
-.liens {
+.links {
     font-size: 12px;
     font-weight: bold;
 }
 
-.billet, .familial, .romantique, .animaux {
+.money, .family, .heart, .dog {
     display: flex;
     flex-direction: row;
     margin-top: 9px;
@@ -165,7 +165,7 @@ div.filter1 {
     border-radius: 15px;
 }
 
-.money, .family, .heart, .dog {
+.money2, .family2, .heart2, .dog2 {
     font-size: 12px;
     text-align: center;
     background-color: var(--Second-color);
@@ -211,8 +211,7 @@ div > article.article1 {
     justify-content: space-around;
     height: 300px;
     width: 570px;
-    margin-top: auto;
-    margin-bottom: auto;
+    margin-top: 15px;
 }
 
 .card1, .card2, .card3 {
@@ -220,7 +219,7 @@ div > article.article1 {
     width: 170px;
     height: 130px;
     border-radius: 15px;
-    box-shadow: 0 0 10px 0 grey;
+    box-shadow: 0 0 10px 0 lightgrey;
 }
 
 .cardimage1 {
@@ -232,7 +231,7 @@ div > article.article1 {
     width: 95%;
     height: 80px;
     margin-top: 3px;
-    margin-left: 2%;
+    margin-left: 2.5%;
     border-radius: 15px 15px 0px 0px;
 }
 
@@ -255,26 +254,26 @@ div > article.article1 {
     font-size: 70%;
 }
 
-.card1:hover {
-    width: 200px;
-    height: 150px;
-    background-color: var(--Second-color);
-}
-
 .card4, .card5, .card6 {
     background-color: white;
-    box-shadow: 0 0 10px 0 grey;
+    box-shadow: 0 0 10px 0 lightgrey;
     width: 170px;
     height: 130px;
     margin-top: 35px;
     border-radius: 15px;
 }
 
+.card1:hover, .card2:hover, .card3:hover, .card4:hover, .card5:hover, .card6:hover {
+    background-color: var(--Second-color);
+    box-shadow: 0 0 30px 0 black;
+}
+
 .afficher {
     font-weight: bold;
     font-size: 12px;
+    width: 85px;
     height: 14px;
-    margin-top: 30px;
+    margin-top: 20px;
 }
 
 .afficher:hover {
@@ -320,10 +319,10 @@ div > aside {
     height: 95px;
     width: 220px;
     border-radius: 15px;
-    box-shadow: 0 0 10px 0 grey;
+    box-shadow: 0 0 10px 0 lightgrey;
 }
 
-.cardimagep1 {
+.cardimagep1, .cardimagep2, .cardimagep3 {
     width: 50%;
 }
 
@@ -350,68 +349,20 @@ div > aside {
     font-size: 10px;
 }
 
-.cardp1:hover {
-    width: 250px;
-}
-
-.cardimagep2 {
-    width: auto;
-}
-
-.imagep2 {
-    width: 90px;
-    height: 89px;
-    padding-top: 3px;
-    padding-bottom: 3px;
-    margin-left: 3px;
-    border-radius: 15px 0px 0px 15px;
-}
-
-.cardtextp2 {
-    width: auto;
-    margin-left: 5px;
-}
-
-.descriptiontextp2 {
-    font-size: 12px;
-    font-weight: bold;
-}
-
-.description2textp2 {
-    font-size: 10px;
-}
-
-.cardimagep3 {
-    width: auto;
-}
-
-.imagep3 {
-    width: 90px;
-    height: 89px;
-    padding-top: 3px;
-    padding-bottom: 3px;
-    margin-left: 3px;
-    border-radius: 15px 0px 0px 15px;
-}
-
-.cardtextp3 {
-    width: auto;
-    margin-left: 5px;
-}
-
-.descriptiontextp3 {
-    font-size: 12px;
-    font-weight: bold;
-}
-
-.description2textp3 {
-    font-size: 10px;
+.cardp1:hover, .cardp2:hover, .cardp3:hover{
+    cursor: pointer;
+    background-color: var(--Second-color);
+    box-shadow: 0 0 30px 0 black;
 }
 
 div > article.article2 {
-    padding: 20px;
+    padding-left: 25px;
     grid-column-start: 1;
     grid-column-end: 3;
+}
+
+#activity {
+    margin-top: 10px;
 }
 
 .cardsactivity {
@@ -429,7 +380,7 @@ div > article.article2 {
 
 .carda1 {
     background-color: white;
-    box-shadow: 0 0 10px 0 grey;
+    box-shadow: 0 0 10px 0 lightgrey;
     border-radius: 15px;
     height: 340px;
     width: 45%;
@@ -453,13 +404,14 @@ div > article.article2 {
     display: flex;
     flex-direction: column;
     margin-left: 40px;
+    width: 35%;
 }
 
 .carda2 {
     background-color: white;
-    box-shadow: 0 0 10px 0 grey;
+    box-shadow: 0 0 10px 0 lightgrey;
     border-radius: 15px;
-    width: 130%;
+    width: 100%;
     height: 190px;
 }
 
@@ -479,9 +431,9 @@ div > article.article2 {
 
 .carda3 {
     background-color: white;
-    box-shadow: 0 0 10px 0 grey;
+    box-shadow: 0 0 10px 0 lightgrey;
     border-radius: 15px;
-    width: 130%;
+    width: 100%;
     height: 120px;
     margin-top: 30px;
 }
@@ -510,7 +462,7 @@ div > article.article2 {
 
 .carda4 {
     background-color: white;
-    box-shadow: 0 0 10px 0 grey;
+    box-shadow: 0 0 10px 0 lightgrey;
     border-radius: 15px;
     height: 340px;
     width: 45%;
@@ -533,16 +485,16 @@ div > article.article2 {
 .cardsbloc2 {
     display: flex;
     flex-direction: column;
-    margin-left: 20px;
+    margin-left: 50px;
+    width: 40%;
 }
 
 .carda5 {
     background-color: white;
-    box-shadow: 0 0 10px 0 grey;
+    box-shadow: 0 0 10px 0 lightgrey;
     border-radius: 15px;
     height: 150px;
     width: 100%;
-    margin-left: 20px;
 }
 
 .imagea5 {
@@ -561,12 +513,11 @@ div > article.article2 {
 
 .carda6 {
     background-color: white;
-    box-shadow: 0 0 10px 0 grey;
+    box-shadow: 0 0 10px 0 lightgrey;
     border-radius: 15px;
     height: 160px;
     width: 100%;
     margin-top: 30px;
-    margin-left: 20px;
 }
 
 .imagea6 {
@@ -583,8 +534,12 @@ div > article.article2 {
     font-size: 13px;
 }
 
+.carda1:hover, .carda2:hover, .carda3:hover, .carda4:hover, .carda5:hover, .carda6:hover {
+    box-shadow: 0 0 10px 0 black;
+}
+
 div > footer {
-    background-color: chartreuse;
+    background-color: var(--Background-color);
     padding: 20px;
     grid-column-start: 1;
     grid-column-end: 3;
@@ -613,12 +568,15 @@ div > footer {
     }
     
     .cardshebergements {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
         margin-left: auto;
         margin-right: auto;
-        width: 650px;
     }
 
-    .card1, .card2, .card3 {
+    .card1, .card2, .card3, .card4, .card5, .card6 {
         background-color: white;
     }
 
@@ -634,7 +592,7 @@ div > footer {
 
     #populaire {
         height: 120px;
-        width: 690px;
+        width: 98%;
     }  
 
     .cardspopulaire {
@@ -642,7 +600,7 @@ div > footer {
         flex-direction: row;
         flex-wrap: wrap;
         height: 100px;
-        width: 670px;
+        width: 100%;
     }
     
 }
@@ -695,11 +653,11 @@ div > footer {
         text-align: center;
     }
 
-    #rechercher {
+    #searchbar {
         justify-content: center;
     }
 
-    .ville {
+    .city {
         width: 100px;
         height: 33px;
     }
@@ -709,7 +667,7 @@ div > footer {
     }
     
 
-    #filtres {
+    #filters {
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
@@ -721,7 +679,7 @@ div > footer {
         flex-direction: row;
     }
 
-    .billet {
+    .money {
         margin-top: 10px;
         margin-bottom: 10px;
         margin-right: 1px;
@@ -732,7 +690,7 @@ div > footer {
         height: 23px;
     }
 
-    .familial {
+    .family {
         margin-top: 10px;
         margin-bottom: 10px;
         margin-right: 1px;
@@ -743,7 +701,7 @@ div > footer {
         height: 23px;
     }
 
-    .romantique {
+    .heart {
         margin-top: 10px;
         margin-bottom: 10px;
         margin-right: 1px;
@@ -755,7 +713,7 @@ div > footer {
         height: 23px;
     }
 
-    .animaux {
+    .dog {
         margin-top: 10px;
         margin-bottom: 10px;
         margin-right: 1px;
@@ -779,7 +737,7 @@ div > footer {
         grid-column-start: 1;
         grid-column-end: 3;
         border-radius: 0;
-        height: 1000px;
+        height: 915px;
         margin-top: 5px;
     }
 
@@ -829,7 +787,7 @@ div > footer {
         margin-right: 0;
     }
  
-    .cardp1 {
+    .cardp1, .cardp2, .cardp3 {
         width: auto;
     }
 
@@ -841,32 +799,9 @@ div > footer {
         font-size: auto;
     }
 
-    .cardp2 {
-        width: auto;
-    }
-
-    .descriptiontextp2 {
-        font-size: auto;
-    }
-    
-    .description2textp2 {
-        font-size: auto;
-    }
-
-    .cardp3 {
-        width: auto;
-    }
-
-    .descriptiontextp3 {
-        font-size: auto;
-    }
-    
-    .description2textp3 {
-        font-size: auto;
-    }
-
     div > article.article2 {
         height: 1200px;
+        padding-right: 25px;
     }
 
     .cardsactivity {
@@ -885,6 +820,7 @@ div > footer {
 
     .cardsbloc1, .cardsbloc2 {
         margin-left: 0;
+        width: 100%;
     }
     .carda1, .carda2, .carda3, .carda4, .carda5, .carda6 {
         background-color: white;
@@ -892,8 +828,7 @@ div > footer {
         border-radius: 15px;
         height: 180px;
         width: 100%;
-        margin-left: auto;
-        margin-right: auto;
+        margin-left: 2px;
         margin-bottom: 10px;
         margin-top: 0px;
     }
