@@ -197,75 +197,108 @@ div > article.article1 {
     margin: -20px 10px 10px 10px;
 }
 
+
 #hebergements {
     display: flex;
     flex-direction: column;
-    width: 575px;
-    height: 350px;
+    width: 675px;
+    height: 400px;
 }
 
 .cardshebergements {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-around;
-    height: 300px;
-    width: 570px;
+    justify-content: space-between;
+    height: 350px;
+    width: 675px;
     margin-top: 15px;
 }
 
-.card1, .card2, .card3 {
+.card1, .card2, .card3, .card4, .card5, .card6 {
     background-color: white;
-    width: 170px;
-    height: 130px;
+    height: 150px;
+    width: 200px;
     border-radius: 15px;
     box-shadow: 0 0 10px 0 lightgrey;
+    transition: 400ms ease;
 }
 
 .cardimage1 {
-    width: auto;
+    background: url(/Images/Hebergements/4_small/Auberge-La-Cannebière.jpg);
+    background-size: cover;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    height: 90px;
+    margin: 3px;
 }
 
-.image1 {
-    text-align: center;
-    width: 95%;
-    height: 80px;
-    margin-top: 3px;
-    margin-left: 2.5%;
-    border-radius: 15px 15px 0px 0px;
+.cardimage2 {
+    background: url(/Images/Hebergements/4_small/Hotel-du-port.jpg);
+    background-size: cover;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    height: 90px;
+    margin: 3px;
+}
+
+.cardimage3 {
+    background: url(/Images/Hebergements/4_small/Hotel-Les-mouettes.jpg);
+    background-size: cover;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    height: 90px;
+    margin: 3px;
+}
+
+.cardimage4 {
+    background: url(/Images/Hebergements/4_small/Hotel-de-la-mer.jpg);
+    background-size: cover;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    height: 90px;
+    margin: 3px;
+}
+
+.cardimage5 {
+    background: url(/Images/Hebergements/4_small/Auberge-Le-Panier.jpg);
+    background-size: cover;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    height: 90px;
+    margin: 3px;
+}
+
+.cardimage6 {
+    background: url(/Images/Hebergements/4_small/Hotel-chez-Amina.jpg);
+    background-size: cover;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    height: 90px;
+    margin: 3px;
 }
 
 .cardtext1 {
     width: auto;
-    height: 45px;
-    margin-top: -10px;
+    height: 60px;
 }
 
 .descriptiontext1 {
-    margin-left: 8px;
+    margin-left: 5px;
     margin-top: 7px;
-    font-size: 80%;
+    font-size: 75%;
     font-weight: bold;
 }
 
 .description2text1 {
     margin-top: -10px;
-    margin-left: 8px;
+    margin-left: 5px;
     font-size: 70%;
 }
 
-.card4, .card5, .card6 {
-    background-color: white;
-    box-shadow: 0 0 10px 0 lightgrey;
-    width: 170px;
-    height: 130px;
-    margin-top: 35px;
-    border-radius: 15px;
-}
-
 .card1:hover, .card2:hover, .card3:hover, .card4:hover, .card5:hover, .card6:hover {
-    background-color: var(--Second-color);
-    box-shadow: 0 0 30px 0 black;
+    transform: scale(1.1);
+    box-shadow: 0 0 10px 0 black;
 }
 
 .afficher {
@@ -274,13 +307,13 @@ div > article.article1 {
     width: 85px;
     height: 14px;
     margin-top: 20px;
+    transition: 400ms ease;
 }
 
 .afficher:hover {
     color: blue;
     font-size: 14px;
-    animation-delay: 400ms;
-    transform:translate(14px, 10%);
+    transform: scale(1.1);
 }
 
 div > aside {
@@ -295,7 +328,7 @@ div > aside {
 #populaire {
     display: flex;
     flex-direction: column;
-    height: 350px;
+    height: 400px;
     width: 240px;
     margin-left: auto;
     margin-right: auto;
@@ -304,8 +337,8 @@ div > aside {
 .cardspopulaire {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    height: 340px;
+    justify-content: space-evenly;
+    height: 390px;
     width: 220px;
     margin-left: auto;
     margin-right: auto;
@@ -316,23 +349,20 @@ div > aside {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    height: 95px;
-    width: 220px;
+    height: 100px;
+    width: auto;
     border-radius: 15px;
     box-shadow: 0 0 10px 0 lightgrey;
+    transition: 400ms ease;
 }
 
-.cardimagep1, .cardimagep2, .cardimagep3 {
-    width: 50%;
-}
-
-.imagep1 {
-    width: 85%;
-    height: 89px;
-    padding-top: 3px;
-    padding-bottom: 3px;
-    margin-left: 3px;
-    border-radius: 15px 0px 0px 15px;
+.cardimagep1 {
+    background: url(/Images/Hebergements/4_small/Hotel-Le-soleil-du-matin.jpg);
+    background-size: cover;
+    margin: 2px;
+    width: 100px;
+    border-bottom-left-radius: 15px;
+    border-top-left-radius: 15px;
 }
 
 .cardtextp1 {
@@ -349,10 +379,29 @@ div > aside {
     font-size: 10px;
 }
 
+.cardimagep2 {
+    background: url(/Images/Hebergements/4_small/Au-coeur-de-l-eau.jpg);
+    background-size: cover;
+    margin: 2px;
+    width: 100px;
+    border-bottom-left-radius: 15px;
+    border-top-left-radius: 15px;
+}
+
+.cardimagep3 {
+    background: url(/Images/Hebergements/4_small/Hotel-Tout-bleu-et-blanc.jpg);
+    background-size: cover;
+    margin: 2px;
+    width: 100px;
+    border-bottom-left-radius: 15px;
+    border-top-left-radius: 15px;
+}
+
+
 .cardp1:hover, .cardp2:hover, .cardp3:hover{
     cursor: pointer;
-    background-color: var(--Second-color);
-    box-shadow: 0 0 30px 0 black;
+    box-shadow: 0 0 10px 0 black;
+    transform: scale(1.1);
 }
 
 div > article.article2 {
@@ -368,6 +417,7 @@ div > article.article2 {
 .cardsactivity {
     display: flex;
     flex-direction: row;
+    margin-top: 20px;
 }
 
 .cardsb1 {
@@ -379,77 +429,79 @@ div > article.article2 {
 }
 
 .carda1 {
-    background-color: white;
-    box-shadow: 0 0 10px 0 lightgrey;
+    box-shadow: 0 0 10px 0 lightgray;
+    height: 370px;
+    width: 40%;
     border-radius: 15px;
-    height: 340px;
-    width: 45%;
+    transition: 400ms ease;
 }
 
-.imagea1 {
-    width: 100%;
-    height: 300px;
-    border-radius: 15px 15px 0 0;
+.cardimagea1 {
+    background: url(/Images/Activites/4_small/Vieux-Port.jpg);
+    background-size: cover;
+    height: 330px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
 }
 
 .cardtexta1 {
-    margin-top: 10px;
-    margin-bottom: 10px;
-    margin-left: 10px;
+    margin: 10px;
     font-weight: bold;
-    font-size: 13px;
+    font-size: 80%;
 }
 
 .cardsbloc1 {
     display: flex;
     flex-direction: column;
     margin-left: 40px;
-    width: 35%;
+    width: 40%;
 }
 
 .carda2 {
-    background-color: white;
     box-shadow: 0 0 10px 0 lightgrey;
+    height: 210px;
+    width: auto;
     border-radius: 15px;
-    width: 100%;
-    height: 190px;
+    transition: 400ms ease;
 }
 
-.imagea2 {
-    width: 100%;
-    height: 150px;
-    border-radius: 15px 15px 0 0;
+.cardimagea2 {
+    background: url(/Images/Activites/4_small/Fort-de-Pomègues.jpg);
+    background-size: cover;
+    height: 170px;
+    width: auto;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
 }
 
 .cardtexta2 {
-    margin-top: 10px;
-    margin-bottom: 10px;
-    margin-left: 10px;
+    margin: 10px;
     font-weight: bold;
-    font-size: 13px;
+    font-size: 80%;
 }
 
 .carda3 {
-    background-color: white;
     box-shadow: 0 0 10px 0 lightgrey;
+    height: 140px;
+    width: auto;
+    margin-top: 20px;
     border-radius: 15px;
-    width: 100%;
-    height: 120px;
-    margin-top: 30px;
+    transition: 400ms ease;
 }
 
-.imagea3 {
-    width: 100%;
-    height: 80px;
-    border-radius: 15px 15px 0 0;
+.cardimagea3 {
+    background: url(/Images/Activites/4_small/Iles-du-Frioul.jpg);
+    background-size: cover;
+    height: 100px;
+    width: auto;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
 }
 
 .cardtexta3 {
-    margin-top: 10px;
-    margin-bottom: 10px;
-    margin-left: 10px;
+    margin: 10px;
     font-weight: bold;
-    font-size: 13px;
+    font-size: 80%;
 }
 
 .cardsb2 {
@@ -461,25 +513,26 @@ div > article.article2 {
 }
 
 .carda4 {
-    background-color: white;
-    box-shadow: 0 0 10px 0 lightgrey;
+    box-shadow: 0 0 10px 0 lightgray;
+    height: 370px;
+    width: auto;
     border-radius: 15px;
-    height: 340px;
-    width: 45%;
+    transition: 400ms ease;
 }
 
-.imagea4 {
-    width: 100%;
-    height: 300px;
-    border-radius: 15px 15px 0 0;
+.cardimagea4 {
+    background: url(/Images/Activites/4_small/Parc-National-des-Calanques.jpg);
+    background-size: cover;
+    height: 330px;
+    width: auto;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
 }
 
 .cardtexta4 {
-    margin-top: 10px;
-    margin-bottom: 10px;
-    margin-left: 10px;
+    margin: 10px;
     font-weight: bold;
-    font-size: 13px;
+    font-size: 80%;
 }
 
 .cardsbloc2 {
@@ -490,51 +543,54 @@ div > article.article2 {
 }
 
 .carda5 {
-    background-color: white;
     box-shadow: 0 0 10px 0 lightgrey;
     border-radius: 15px;
-    height: 150px;
-    width: 100%;
+    height: 170px;
+    width: auto;
+    transition: 400ms ease;
 }
 
-.imagea5 {
-    width: 100%;
-    height: 110px;
-    border-radius: 15px 15px 0 0;
+.cardimagea5 {
+    background: url(/Images/Activites/4_small/Notre-Dame-de-la-Garde.jpg);
+    background-size: cover;
+    height: 130px;
+    width: auto;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
 }
 
 .cardtexta5 {
-    margin-top: 10px;
-    margin-bottom: 10px;
-    margin-left: 10px;
+    margin: 10px;
     font-weight: bold;
-    font-size: 13px;
+    font-size: 80%;
 }
 
 .carda6 {
-    background-color: white;
     box-shadow: 0 0 10px 0 lightgrey;
     border-radius: 15px;
-    height: 160px;
-    width: 100%;
-    margin-top: 30px;
+    height: 180px;
+    width: auto;
+    margin-top: 20px;
+    transition: 400ms ease;
 }
 
-.imagea6 {
-    width: 100%;
-    height: 120px;
-    border-radius: 15px 15px 0 0;
+.cardimagea6 {
+    background: url(/Images/Activites/4_small/Parc-Longchamp.jpg);
+    background-size: cover;
+    height: 140px;
+    width: auto;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
 }
 
 .cardtexta6 {
-    margin-top: 10px;
-    margin-bottom: 10px;
-    margin-left: 10px;
+    margin: 10px;
     font-weight: bold;
-    font-size: 13px;
+    font-size: 80%;
 }
 
 .carda1:hover, .carda2:hover, .carda3:hover, .carda4:hover, .carda5:hover, .carda6:hover {
+    transform: scale(1.1);
     box-shadow: 0 0 10px 0 black;
 }
 
@@ -591,18 +647,41 @@ div > footer {
     }
 
     #populaire {
-        height: 120px;
-        width: 98%;
+        height: 520px;
+        width: 100%;
     }  
 
     .cardspopulaire {
         display: flex;
+        flex-direction: column;
+        align-content: center;
+        height: 500px;
+        width: auto;
+    }
+
+    .cardp1, .cardp2, .cardp3 {
+        height: 125px;
+    }
+
+    .cardsactivity {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .cardsb1, .cardsb2 {
+        display: flex;
         flex-direction: row;
-        flex-wrap: wrap;
-        height: 100px;
+        justify-content: center;
         width: 100%;
     }
-    
+
+    .cardsbloc1, .cardsbloc2 {
+        margin-left: auto;
+    }
+
+    .carda4 {
+        width: 40%;
+    }
 }
 
 @media screen and (max-device-width: 767px) {
@@ -737,8 +816,9 @@ div > footer {
         grid-column-start: 1;
         grid-column-end: 3;
         border-radius: 0;
-        height: 915px;
+        height: 1050px;
         margin-top: 5px;
+        border-radius: 15px;
     }
 
     #hebergements {
@@ -771,7 +851,7 @@ div > footer {
         grid-column-start: 1;
         grid-column-end: 3;
         margin: 0;
-        border-radius: 0;
+        border-radius: 15px;
     }
 
     #populaire {
@@ -800,7 +880,7 @@ div > footer {
     }
 
     div > article.article2 {
-        height: 1200px;
+        height: 1300px;
         padding-right: 25px;
     }
 
@@ -815,26 +895,29 @@ div > footer {
         flex-direction: column;
         flex-wrap: nowrap;
         width: 100%;
-        height: 600px;
+        height: 400px;
     }
 
     .cardsbloc1, .cardsbloc2 {
+        display: flex;
+        flex-direction: column;
         margin-left: 0;
         width: 100%;
     }
+
+    .cardsb2 {
+        margin-top: 220px;
+    }
+   
     .carda1, .carda2, .carda3, .carda4, .carda5, .carda6 {
-        background-color: white;
-        box-shadow: 0 0 10px 0 grey;
-        border-radius: 15px;
         height: 180px;
-        width: 100%;
+        width: auto;
         margin-left: 2px;
-        margin-bottom: 10px;
+        margin-bottom: 30px;
         margin-top: 0px;
     }
 
-    .imagea1, .imagea2, .imagea3, .imagea4 {
-        height: 130px;
-        border-radius: 15px 15px 0 0;
+    .cardimagea1, .cardimagea2, .cardimagea3, .cardimagea4, .cardimagea5, .cardimagea6 {
+        height: 140px;
     }
  }
