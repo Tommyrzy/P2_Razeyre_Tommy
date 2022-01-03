@@ -12,8 +12,6 @@
 html {
     display: flex;
     justify-content: center;
-    margin-left: 2%;
-    margin-right: 2%;
 }
 
 body {
@@ -102,6 +100,7 @@ h3 {
 #searchbar {
     display: flex;
     flex-direction: row;
+    width: 100%;
     margin-top: -10px;
 }
 
@@ -110,7 +109,7 @@ h3 {
     background-color: lightgray;
     border: 2px solid lightgray;
     border-width: 7px;
-    border-radius: 15px 0px 0px 15px;
+    border-radius: 10px 0px 0px 10px;
     height: 25px;
 }
 
@@ -119,18 +118,19 @@ h3 {
     border-bottom: solid 2px lightgray;
     border-left: solid 2px lightgray;
     border-right: none;
-    width: 165px;
-    height: 33px;
-    margin-left: -4px;
+    width: 60%;
+    height: 39px;
+    margin-right: -10px;
 }
 
 .button {
     margin-top: 16px;
     height: 39px;
+    width: 30%;
     background-color: var(--Main-color);
     color: white;
     border: none;
-    border-radius: 0px 15px 15px 0px;
+    border-radius: 0px 10px 10px 0px;
     cursor: pointer;
 }
 
@@ -150,6 +150,10 @@ div.filter1 {
     font-weight: bold;
 }
 
+.links:hover, .links:focus {
+    color: var(--Main-color);
+}
+
 .money, .family, .heart, .dog {
     display: flex;
     flex-direction: row;
@@ -163,6 +167,11 @@ div.filter1 {
     border-bottom: solid 2px lightgray;
     border-right: solid 2px lightgray;
     border-radius: 15px;
+    transition: 400ms ease;
+}
+
+.money:hover, .family:hover, .heart:hover, .dog:hover {
+    transform: scale(1.1);
 }
 
 .money2, .family2, .heart2, .dog2 {
@@ -201,7 +210,7 @@ div > article.article1 {
 #hebergements {
     display: flex;
     flex-direction: column;
-    width: 675px;
+    width: 635px;
     height: 400px;
 }
 
@@ -211,7 +220,7 @@ div > article.article1 {
     flex-wrap: wrap;
     justify-content: space-between;
     height: 350px;
-    width: 675px;
+    width: 635px;
     margin-top: 15px;
 }
 
@@ -280,11 +289,11 @@ div > article.article1 {
 
 .cardtext1 {
     width: auto;
-    height: 60px;
+    height: 35px;
 }
 
 .descriptiontext1 {
-    margin-left: 5px;
+    margin-left: 10px;
     margin-top: 7px;
     font-size: 75%;
     font-weight: bold;
@@ -292,7 +301,23 @@ div > article.article1 {
 
 .description2text1 {
     margin-top: -10px;
-    margin-left: 5px;
+    margin-left: 10px;
+    font-size: 70%;
+}
+
+.star {
+    height: 10px;
+    margin-top: -20px;
+    margin-left: 10px;
+}
+
+.bluestar {
+    color: var(--Main-color);
+    font-size: 70%;
+}
+
+.greystar {
+    color: lightgray;
     font-size: 70%;
 }
 
@@ -322,14 +347,25 @@ div > aside {
     grid-column-start: 2;
     grid-column-end: 3;
     border-radius: 10px;
-    margin: -20px 10px 10px 10px;
+    margin: -20px 2px 10px -15px;
+}
+
+.titlep {
+    width: 70%;
+    margin-top: -15px;
+}
+
+.arrow {
+    font-size: 120%;
+    margin-left: 90%;
+    margin-top: 10px;
 }
 
 #populaire {
     display: flex;
     flex-direction: column;
     height: 400px;
-    width: 240px;
+    width: 230px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -339,7 +375,7 @@ div > aside {
     flex-direction: column;
     justify-content: space-evenly;
     height: 390px;
-    width: 220px;
+    width: 230px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -391,12 +427,26 @@ div > aside {
 .cardimagep3 {
     background: url(/Images/Hebergements/4_small/Hotel-Tout-bleu-et-blanc.jpg);
     background-size: cover;
+    background-repeat: no-repeat;
     margin: 2px;
     width: 100px;
     border-bottom-left-radius: 15px;
     border-top-left-radius: 15px;
 }
 
+.starp {
+    margin-top: -5px;
+}
+
+.bluestarp {
+    color: var(--Main-color);
+    font-size: 70%;
+}
+
+.greystarp {
+    color: lightgray;
+    font-size: 70%;
+}
 
 .cardp1:hover, .cardp2:hover, .cardp3:hover{
     cursor: pointer;
@@ -426,12 +476,13 @@ div > article.article2 {
     flex-wrap: wrap;
     width: 50%;
     height: 400px;
+    margin-left: 20px;
 }
 
 .carda1 {
     box-shadow: 0 0 10px 0 lightgray;
     height: 370px;
-    width: 40%;
+    width: 195px;
     border-radius: 15px;
     transition: 400ms ease;
 }
@@ -600,7 +651,36 @@ div > footer {
     grid-column-start: 1;
     grid-column-end: 3;
 }
- 
+
+#footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 85%;
+    height: auto;
+}
+
+.footer1 {
+    display: flex;
+    flex-direction: column;
+}
+
+.titlefooter {
+    font-weight: bold;
+    font-size: 80%;
+}
+
+.textfooter {
+    font-size: 70%;
+    line-height: 25px;
+    transition: 400ms ease;
+}
+
+.textfooter:hover {
+    color: rgb(0, 0, 255);
+    transform: scale(0.9);
+}
+
 @media screen and (max-width: 991px) and (min-width: 768px) {
 
     
@@ -661,6 +741,15 @@ div > footer {
 
     .cardp1, .cardp2, .cardp3 {
         height: 125px;
+        width: 400px;
+    }
+
+    .cardimagep1, .cardimagep2, .cardimagep3 {
+        width: 50%;
+    }
+
+    .cardtextp1 {
+        width: 50%;
     }
 
     .cardsactivity {
@@ -673,18 +762,15 @@ div > footer {
         flex-direction: row;
         justify-content: center;
         width: 100%;
+        margin: 0px;
     }
 
-    .cardsbloc1, .cardsbloc2 {
-        margin-left: auto;
-    }
-
-    .carda4 {
-        width: 40%;
+    .cardsbloc1 {
+        margin-left: 50px;
     }
 }
 
-@media screen and (max-device-width: 767px) {
+@media screen and (max-width: 767px) {
 
     body {
         max-width: 767px;
@@ -735,16 +821,6 @@ div > footer {
     #searchbar {
         justify-content: center;
     }
-
-    .city {
-        width: 100px;
-        height: 33px;
-    }
-    
-    .button {
-        margin-left: -1%;
-    }
-    
 
     #filters {
         display: flex;
@@ -807,6 +883,7 @@ div > footer {
 
     .logements {
         font-size: 70%;
+        text-align: center;
     }
 
     div > article.article1 {
@@ -871,12 +948,20 @@ div > footer {
         width: auto;
     }
 
+    .cardimagep1, .cardimagep2, .cardimagep3 {
+        width: 50%;
+    }
+
+    .cardtextp1 {
+        width: 50%;
+    }
+
     .descriptiontextp1 {
-        font-size: auto;
+        font-size: 80%;
     }
     
     .description2textp1 {
-        font-size: auto;
+        font-size: 70%;
     }
 
     div > article.article2 {
@@ -896,6 +981,7 @@ div > footer {
         flex-wrap: nowrap;
         width: 100%;
         height: 400px;
+        margin-left: 0;
     }
 
     .cardsbloc1, .cardsbloc2 {
@@ -920,4 +1006,14 @@ div > footer {
     .cardimagea1, .cardimagea2, .cardimagea3, .cardimagea4, .cardimagea5, .cardimagea6 {
         height: 140px;
     }
- }
+
+    #footer {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .textfooter {
+        text-align: center;
+    }
+}

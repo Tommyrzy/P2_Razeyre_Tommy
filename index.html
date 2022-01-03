@@ -13,28 +13,27 @@
 <body>
     <div id="container" class="container">
         <header class="navbar">
-
             <nav id="navbar">
                 <a href="#"> <img class="Logo" src="/Images/Logo/Booki.png" alt="Logo de l'application Booki"></a>
                 <div id="bouton" class="BoutonHybride">
-                    <a class="Menubutton1" href="#">Hébergements</a>
-                    <a class="Menubutton2" href="#">Activités</a>
+                    <a class="Menubutton1" href="#hebergements">Hébergements</a>
+                    <a class="Menubutton2" href="#activity">Activités</a>
                 </div>
             </nav>
 
         </header>
 
         <main class="search">
-
             <div id="search">
                 <h2>Trouver votre hébergements pour des vacances de rêve</h2>
                 <h3>En plein centre ville ou en pleine nature</h3>
                 <form method="post" action="traitement.php">
                     <div id="searchbar">
                         <p>
-                            <label for="ville"><i class="localisation fas fa-map-marker-alt"></i></label>  <input type="text" name="ville" class="city">
+                            <i class="localisation fas fa-map-marker-alt"></i>
+                            <label class="city"></label><input  type="search" name="ville" placeholder="Marseille, France" class="city">
+                            <button class="button">Rechercher</button>
                         </p>
-                        <button class="button">Rechercher</button>
                     </div>
                 </form>
             </div>
@@ -67,7 +66,10 @@
                             <div class="cardimage1"></div>
                             <div class="cardtext1">
                                 <p class="descriptiontext1">Auberge La Cannebière</p>
-                                <p class="description2text1">Nuit à partir de 25€</p>
+                                <p class="description2text1">Nuit à partir de <strong>25€</strong></p>
+                            </div>
+                            <div class="star">
+                                <p><i class="bluestar fas fa-star"></i><i class="bluestar fas fa-star"></i><i class="bluestar fas fa-star"></i><i class="bluestar fas fa-star"></i><i class="greystar fas fa-star"></i></p>
                             </div>
                         </div>
                     </a>
@@ -76,7 +78,10 @@
                             <div class="cardimage2"></div>
                             <div class="cardtext1">
                                 <p class="descriptiontext1">Hôtel du port</p>
-                                <p class="description2text1">Nuit à partir de 52€</p>
+                                <p class="description2text1">Nuit à partir de 52<strong>€</strong></p>
+                            </div>
+                            <div class="star">
+                                <p><i class="bluestar fas fa-star"></i><i class="bluestar fas fa-star"></i><i class="bluestar fas fa-star"></i><i class="bluestar fas fa-star"></i><i class="bluestar fas fa-star"></i></p>
                             </div>
                         </div>
                     </a>
@@ -85,7 +90,10 @@
                             <div class="cardimage3"></div>
                             <div class="cardtext1">
                                 <p class="descriptiontext1">Hôtel Les mouettes</p>
-                                <p class="description2text1">Nuit à partir de 76€</p>
+                                <p class="description2text1">Nuit à partir de 76<strong>€</strong></p>
+                            </div>
+                            <div class="star">
+                                <p><i class="bluestar fas fa-star"></i><i class="bluestar fas fa-star"></i><i class="bluestar fas fa-star"></i><i class="bluestar fas fa-star"></i><i class="greystar fas fa-star"></i></p>
                             </div>
                         </div>
                     </a>
@@ -94,7 +102,10 @@
                             <div class="cardimage4"></div>
                             <div class="cardtext1">
                                 <p class="descriptiontext1">Hôtel de la mer</p>
-                                <p class="description2text1">Nuit à partir de 46€</p>
+                                <p class="description2text1">Nuit à partir de 46<strong>€</strong></p>
+                            </div>
+                            <div class="star">
+                                <p><i class="bluestar fas fa-star"></i><i class="bluestar fas fa-star"></i><i class="bluestar fas fa-star"></i><i class="greystar fas fa-star"></i><i class="greystar fas fa-star"></i></p>
                             </div>
                         </div>
                     </a>
@@ -103,7 +114,10 @@
                             <div class="cardimage5"></div>
                             <div class="cardtext1">
                                 <p class="descriptiontext1">Auberge Le Panier</p>
-                                <p class="description2text1">Nuit à partir de 23€</p>
+                                <p class="description2text1">Nuit à partir de <strong>23€</strong></p>
+                            </div>
+                            <div class="star">
+                                <p><i class="bluestar fas fa-star"></i><i class="bluestar fas fa-star"></i><i class="bluestar fas fa-star"></i><i class="bluestar fas fa-star"></i><i class="greystar fas fa-star"></i></p>
                             </div>
                         </div>
                     </a>
@@ -112,7 +126,10 @@
                             <div class="cardimage6"></div>
                             <div class="cardtext1">
                                 <p class="descriptiontext1">Hôtel chez Amina</p>
-                                <p class="description2text1">Nuit à partir de 96€</p>
+                                <p class="description2text1">Nuit à partir de 96<strong>€</strong></p>
+                            </div>
+                            <div class="star">
+                                <p><i class="bluestar fas fa-star"></i><i class="bluestar fas fa-star"></i><i class="bluestar fas fa-star"></i><i class="bluestar fas fa-star"></i><i class="bluestar fas fa-star"></i></p>
                             </div>
                         </div>
                     </a>
@@ -123,13 +140,17 @@
 
         <aside class="aside">
             <div id="populaire">
-                <h2>Les plus populaires</h2>
+                <i class=" arrow fas fa-chart-line"></i>
+                <h2 class="titlep">Les plus populaires</h2>
                 <div class="cardspopulaire">
                     <a href="#"><div class="cardp1">
                             <div class="cardimagep1"></div>
                             <div class="cardtextp1">
                                 <p class="descriptiontextp1">Hôtel Le Soleil du matin</p>
-                                <p class="description2textp1">Nuit à partir de 128€</p>
+                                <p class="description2textp1">Nuit à partir de 128<strong>€</strong></p>
+                                <div class="starp">
+                                    <p><i class="bluestarp fas fa-star"></i><i class="bluestarp fas fa-star"></i><i class="bluestarp fas fa-star"></i><i class="bluestarp fas fa-star"></i><i class="bluestarp fas fa-star"></i></p>
+                                </div>
                             </div>
                         </div>
                     </a>
@@ -138,7 +159,10 @@
                             <div class="cardimagep2"></div>
                             <div class="cardtextp1">
                                 <p class="descriptiontextp1">Au coeur de l'eau Chambres d'hôtes</p>
-                                <p class="description2textp1">Nuit à partir de 71€</p>
+                                <p class="description2textp1">Nuit à partir de 71<strong>€</strong></p>
+                                <div class="starp">
+                                    <p><i class="bluestarp fas fa-star"></i><i class="bluestarp fas fa-star"></i><i class="bluestarp fas fa-star"></i><i class="bluestarp fas fa-star"></i><i class="greystarp fas fa-star"></i></p>
+                                </div>
                             </div>
                         </div>
                     </a>
@@ -147,7 +171,10 @@
                             <div class="cardimagep3"></div>
                             <div class="cardtextp1">
                                 <p class="descriptiontextp1">Hôtel Tout bleu et Blanc</p>
-                                <p class="description2textp1">Nuit à partir de 68€</p>
+                                <p class="description2textp1">Nuit à partir de 68<strong>€</strong></p>
+                                <div class="starp">
+                                    <p><i class="bluestarp fas fa-star"></i><i class="bluestarp fas fa-star"></i><i class="bluestarp fas fa-star"></i><i class="bluestarp fas fa-star"></i><i class="greystarp fas fa-star"></i></p>
+                                </div>
                             </div>
                         </div>
                     </a>
@@ -163,12 +190,15 @@
                             <div class="carda1">
                                 <div class="cardimagea1"></div>
                                 <div class="cardtexta1">Vieux Port</div>
-                            </a></div>
+                            </div>
+                        </a>
                         <div class="cardsbloc1">
-                            <a href="#"><div class="carda2">
-                                <div class="cardimagea2"></div>
-                                <div class="cardtexta2">Fort de Pomègues</div>
-                            </a></div>
+                            <a href="#">
+                                <div class="carda2">
+                                    <div class="cardimagea2"></div>
+                                    <div class="cardtexta2">Fort de Pomègues</div>
+                                </div>
+                            </a>
                             <a href="#">
                                 <div class="carda3">
                                     <div class="cardimagea3"></div>
@@ -179,27 +209,49 @@
                     </div>
                     <div class="cardsb2">
                         <a href="#">
-                                <div class="carda4">
-                                    <div class="cardimagea4"></div>
-                                    <div class="cardtexta4">Parc National des Calanques</div>
-                            </a></div>
+                            <div class="carda4">
+                                <div class="cardimagea4"></div>
+                                <div class="cardtexta4">Parc National des Calanques</div>
+                            </div>
+                        </a>
                         <div class="cardsbloc2">
                             <a href="#">
                                 <div class="carda5">
                                     <div class="cardimagea5"></div>
                                     <div class="cardtexta5">Notre-Dame-de-la-Garde</div>
-                            </a></div>
+                                </div>
+                            </a>
                             <a href="#">
                                 <div class="carda6">
                                     <div class="cardimagea6"></div>
                                     <div class="cardtexta6">Parc Longchamp</div>
-                            </div>
-                        </a></div>
+                                </div>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
         </article>
-        <footer class="menu2">bloc6</footer>     
+        <footer class="menu2">
+            <div id="footer">
+                <div class="footer1">
+                    <h3 class="titlefooter">A propos</h3>
+                    <a class="textfooter" href="#">Fonctionnement du site</a>
+                    <a class="textfooter" href="#">Condition générales de vente</a>
+                    <a class="textfooter" href="#">Durée et confidentialité</a>
+                </div>
+                <div class="footer1">
+                    <h3 class="titlefooter">Nos hébergements</h3>
+                    <a class="textfooter" href="#">Charte qualité</a>
+                    <a class="textfooter" href="#">Soumettre votre hôtel</a>
+                </div>
+                <div class="footer1">
+                    <h3 class="titlefooter">Assistance</h3>
+                    <a class="textfooter" href="#">Centre d'aide</a>
+                    <a class="textfooter" href="#">Nous contacter</a>
+                </div>
+            </div>
+        </footer>     
     </div>
 </body>
 </html>
