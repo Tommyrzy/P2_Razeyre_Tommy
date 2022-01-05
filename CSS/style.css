@@ -37,7 +37,7 @@ div.container {
     grid-column-gap: 20px;
 }
 
-div > header {
+div > header.navbar {
     background-color: white;
     padding: 20px;
     grid-column-start: 1;
@@ -58,12 +58,9 @@ div > header {
     margin-top: 7px;
 }
 
-.BoutonHybride {
+#bouton {
     margin-left: auto;
     font-size: 12px;
-}
-
-#bouton {
     margin-right: 25px;
 }
 
@@ -79,7 +76,7 @@ div > header {
     font-weight: bold;
 }
 
-div > main {
+div > main.search {
     background-color: white;
     padding: 20px;
     grid-column-start: 1;
@@ -97,7 +94,7 @@ h3 {
     font-weight: normal;
 }
 
-#searchbar {
+.searchbar {
     display: flex;
     flex-direction: row;
     width: 100%;
@@ -768,6 +765,10 @@ div > footer {
     .cardsbloc1 {
         margin-left: 50px;
     }
+
+    div > footer {
+        border-radius: 15px 15px 0 0;
+    }
 }
 
 @media screen and (max-width: 767px) {
@@ -794,14 +795,11 @@ div > footer {
         margin-right: auto;
     }
 
-    .BoutonHybride {
-        margin-left: 0%;
-    }
-
     #bouton {
         border-bottom: var(--Second-color) solid 2px;
         padding-bottom: 10px;
         padding-top: 25px;
+        margin-left: 0%;
     }
 
     .Menubutton1:hover, .Menubutton1:focus {
@@ -818,7 +816,7 @@ div > footer {
         text-align: center;
     }
 
-    #searchbar {
+    .searchbar {
         justify-content: center;
     }
 
@@ -887,7 +885,7 @@ div > footer {
     }
 
     div > article.article1 {
-        background-color: var(--Background-color);
+        background-color: white;
         grid-row-start: 4;
         grid-row-end: 5;
         grid-column-start: 1;
@@ -928,7 +926,7 @@ div > footer {
         grid-column-start: 1;
         grid-column-end: 3;
         margin: 0;
-        border-radius: 15px;
+        border-radius: 0px;
     }
 
     #populaire {
@@ -950,6 +948,7 @@ div > footer {
 
     .cardimagep1, .cardimagep2, .cardimagep3 {
         width: 50%;
+        margin: 4px;
     }
 
     .cardtextp1 {
