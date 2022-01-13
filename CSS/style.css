@@ -1,10 +1,4 @@
-@font-face {
-    font-family: 'ralewaythin';
-    src: url('/Polices/raleway-variablefont_wght-webfont.woff2') format('woff2'),
-         url('/Polices/raleway-variablefont_wght-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 :root {
     --Main-color: #0065FC;
@@ -16,12 +10,19 @@
     color: black;
 }
 html {
-    
+    display: flex;
+    justify-content: center;
 }
+
 body {
-    font-family: 'ralewaythin';
+    font-family: 'Raleway', sans-serif;
     margin: 0;
     padding: 0;
+    max-width: 992px;
+}
+
+a {
+    text-decoration: none;
 }
 
 div#container {
@@ -32,93 +33,960 @@ div#container {
 
 div.container {
     height: 100vh;
-    grid-gap: 10px;
-    grid-column-gap: 20px;
 }
 
-div > header {
-    background-color: blue;
+div > header.navbar {
+    background-color: white;
     padding: 20px;
-    grid-column-start: 1;
-    grid-column-end: 3;
+    margin-top: 5px;
 }
 
-div > main {
-    background-color: blueviolet;
+#navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.Logo {
+    width: 35%;
+    margin-left: 7px;
+    margin-top: 7px;
+}
+
+#bouton {
+    margin-left: auto;
+    font-size: 12px;
+    margin-right: 25px;
+}
+
+.Menubutton1, .Menubutton2 {
+    width: 100px;
+    padding: 39px 10px 10px 20px;
+}
+
+.Menubutton1:hover, .Menubutton1:focus, .Menubutton2:hover, .Menubutton2:focus  {
+    border-top: 1px var(--Main-color) solid;
+    color: var(--Main-color);
+    font-weight: bold;
+}
+
+div > main.search {
+    background-color: white;
     padding: 20px;
-    grid-column-start: 1;
-    grid-column-end: 3;
+}
+
+h2 {
+    font-weight: bold;
+    font-size: 15px;
+    margin-top: -2%;
+}
+
+h3 {
+    font-size: 12px;
+    font-weight: normal;
+}
+
+.searchbar {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-top: -10px;
+}
+
+.localisation {
+    font-size: 20px;
+    background-color: lightgray;
+    border: 2px solid lightgray;
+    border-width: 7px;
+    border-radius: 10px 0px 0px 10px;
+    height: 25px;
+}
+
+.city {
+    border-top: solid 2px lightgray;
+    border-bottom: solid 2px lightgray;
+    border-left: solid 2px lightgray;
+    border-right: none;
+    width: 60%;
+    height: 39px;
+    margin-right: -10px;
+}
+
+.button {
+    margin-top: 16px;
+    height: 39px;
+    width: 30%;
+    background-color: var(--Main-color);
+    color: white;
+    border: none;
+    border-radius: 0px 10px 10px 0px;
+    cursor: pointer;
+}
+
+#filters {
+    display: flex;
+    flex-direction: row;
+    font-weight: bold;
+}
+
+div.filter1 {
+    display: flex;
+    flex-direction: row;
+}
+
+.links {
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.links:hover, .links:focus {
+    color: var(--Main-color);
+}
+
+.money, .family, .heart, .dog {
+    display: flex;
+    flex-direction: row;
+    margin-top: 9px;
+    margin-bottom: 15px;
+    margin-right: 10px;
+    margin-left: 15px;
+    padding-top: 5px;
+    padding-right: 10px;
+    border-top: solid 2px lightgray;
+    border-bottom: solid 2px lightgray;
+    border-right: solid 2px lightgray;
+    border-radius: 15px;
+    transition: 400ms ease;
+}
+
+.money:hover, .family:hover, .heart:hover, .dog:hover {
+    transform: scale(1.1);
+}
+
+.money2, .family2, .heart2, .dog2 {
+    font-size: 12px;
+    text-align: center;
+    background-color: var(--Second-color);
+    color: var(--Main-color);
+    width: 25px;
+    height: 20px;
+    border-radius: 50%;
+    margin-top: -5px;
+    margin-right: 15px;
+    padding: 8px 0px 0px 0px;
+}
+
+.logements {
+    font-size: 75%;
+    word-spacing: 1px;
+}
+
+.info {
+    color: var(--Main-color);
+    margin-right: 5px;
 }
 
 div > article.article1 {
     background-color: var(--Background-color);
     padding: 20px;
-    grid-column-start: 1;
-    grid-column-end: 2;
     border-radius: 10px;
-    margin: 10px;
+    margin: -20px 10px 10px 10px;
+}
+
+
+#hebergements {
+    display: flex;
+    flex-direction: column;
+    width: 635px;
+    height: 400px;
+}
+
+.cardshebergements {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    height: 350px;
+    width: 635px;
+}
+
+.card1, .card2, .card3, .card4, .card5, .card6 {
+    background-color: white;
+    height: 150px;
+    width: 200px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px 0 lightgrey;
+    transition: 400ms ease;
+}
+
+.cardimage1 {
+    background: url(/Images/Hebergements/4_small/Auberge-La-Cannebière.jpg);
+    background-size: cover;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    height: 90px;
+    margin: 3px;
+}
+
+.cardimage2 {
+    background: url(/Images/Hebergements/4_small/Hotel-du-port.jpg);
+    background-size: cover;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    height: 90px;
+    margin: 3px;
+}
+
+.cardimage3 {
+    background: url(/Images/Hebergements/4_small/Hotel-Les-mouettes.jpg);
+    background-size: cover;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    height: 90px;
+    margin: 3px;
+}
+
+.cardimage4 {
+    background: url(/Images/Hebergements/4_small/Hotel-de-la-mer.jpg);
+    background-size: cover;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    height: 90px;
+    margin: 3px;
+}
+
+.cardimage5 {
+    background: url(/Images/Hebergements/4_small/Auberge-Le-Panier.jpg);
+    background-size: cover;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    height: 90px;
+    margin: 3px;
+}
+
+.cardimage6 {
+    background: url(/Images/Hebergements/4_small/Hotel-chez-Amina.jpg);
+    background-size: cover;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    height: 90px;
+    margin: 3px;
+}
+
+.cardtext1 {
+    width: auto;
+    height: 35px;
+}
+
+.descriptiontext1 {
+    margin-left: 10px;
+    margin-top: 7px;
+    font-size: 75%;
+    font-weight: bold;
+}
+
+.description2text1 {
+    margin-top: -10px;
+    margin-left: 10px;
+    font-size: 70%;
+}
+
+.star {
+    height: 10px;
+    margin-top: -20px;
+    margin-left: 10px;
+}
+
+.bluestar {
+    color: var(--Main-color);
+    font-size: 70%;
+}
+
+.greystar {
+    color: lightgray;
+    font-size: 70%;
+}
+
+.card1:hover, .card2:hover, .card3:hover, .card4:hover, .card5:hover, .card6:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 10px 0 black;
+}
+
+.afficher {
+    font-weight: bold;
+    font-size: 12px;
+    width: 85px;
+    height: 14px;
+    margin-top: 20px;
+    transition: 400ms ease;
+}
+
+.afficher:hover {
+    color: blue;
+    font-size: 14px;
+    transform: scale(1.1);
 }
 
 div > aside {
     background-color: var(--Background-color);
     padding: 20px;
-    grid-column-start: 2;
-    grid-column-end: 3;
     border-radius: 10px;
-    margin: 10px;
+    margin: -20px 2px 10px -15px;
+}
+
+.titlep {
+    width: 70%;
+    margin-top: -15px;
+}
+
+.arrow {
+    font-size: 120%;
+    margin-left: 90%;
+    margin-top: 10px;
+}
+
+#populaire {
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+    width: 230px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cardspopulaire {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 390px;
+    width: 230px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cardp1, .cardp2, .cardp3 {
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 100px;
+    width: auto;
+    border-radius: 15px;
+    box-shadow: 0 0 10px 0 lightgrey;
+    transition: 400ms ease;
+}
+
+.cardimagep1 {
+    background: url(/Images/Hebergements/4_small/Hotel-Le-soleil-du-matin.jpg);
+    background-size: cover;
+    margin: 2px;
+    width: 100px;
+    border-bottom-left-radius: 15px;
+    border-top-left-radius: 15px;
+}
+
+.cardtextp1 {
+    width: 50%;
+    margin-left: 5px;
+}
+
+.descriptiontextp1 {
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.description2textp1 {
+    font-size: 10px;
+}
+
+.cardimagep2 {
+    background: url(/Images/Hebergements/4_small/Au-coeur-de-l-eau.jpg);
+    background-size: cover;
+    margin: 2px;
+    width: 100px;
+    border-bottom-left-radius: 15px;
+    border-top-left-radius: 15px;
+}
+
+.cardimagep3 {
+    background: url(/Images/Hebergements/4_small/Hotel-Tout-bleu-et-blanc.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 2px;
+    width: 100px;
+    border-bottom-left-radius: 15px;
+    border-top-left-radius: 15px;
+}
+
+.starp {
+    margin-top: -5px;
+}
+
+.bluestarp {
+    color: var(--Main-color);
+    font-size: 70%;
+}
+
+.greystarp {
+    color: lightgray;
+    font-size: 70%;
+}
+
+.cardp1:hover, .cardp2:hover, .cardp3:hover{
+    cursor: pointer;
+    box-shadow: 0 0 10px 0 black;
+    transform: scale(1.1);
 }
 
 div > article.article2 {
-    background-color: cadetblue;
-    padding: 20px;
-    grid-column-start: 1;
-    grid-column-end: 3;
+    padding-left: 25px;
+}
+
+#activity {
+    margin-top: 10px;
+}
+
+.cardsactivity {
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+}
+
+.cardsb1 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 50%;
+    height: 400px;
+    margin-left: 20px;
+}
+
+.carda1 {
+    box-shadow: 0 0 10px 0 lightgray;
+    height: 370px;
+    width: 195px;
+    border-radius: 15px;
+    transition: 400ms ease;
+}
+
+.cardimagea1 {
+    background: url(/Images/Activites/4_small/Vieux-Port.jpg);
+    background-size: cover;
+    height: 330px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.cardtexta1 {
+    margin: 10px;
+    font-weight: bold;
+    font-size: 80%;
+}
+
+.cardsbloc1 {
+    display: flex;
+    flex-direction: column;
+    margin-left: 40px;
+    width: 40%;
+}
+
+.carda2 {
+    box-shadow: 0 0 10px 0 lightgrey;
+    height: 210px;
+    width: auto;
+    border-radius: 15px;
+    transition: 400ms ease;
+}
+
+.cardimagea2 {
+    background: url(/Images/Activites/4_small/Fort-de-Pomègues.jpg);
+    background-size: cover;
+    height: 170px;
+    width: auto;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.cardtexta2 {
+    margin: 10px;
+    font-weight: bold;
+    font-size: 80%;
+}
+
+.carda3 {
+    box-shadow: 0 0 10px 0 lightgrey;
+    height: 140px;
+    width: auto;
+    margin-top: 20px;
+    border-radius: 15px;
+    transition: 400ms ease;
+}
+
+.cardimagea3 {
+    background: url(/Images/Activites/4_small/Iles-du-Frioul.jpg);
+    background-size: cover;
+    height: 100px;
+    width: auto;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.cardtexta3 {
+    margin: 10px;
+    font-weight: bold;
+    font-size: 80%;
+}
+
+.cardsb2 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 50%;
+    height: 400px;
+}
+
+.carda4 {
+    box-shadow: 0 0 10px 0 lightgray;
+    height: 370px;
+    width: auto;
+    border-radius: 15px;
+    transition: 400ms ease;
+}
+
+.cardimagea4 {
+    background: url(/Images/Activites/4_small/Parc-National-des-Calanques.jpg);
+    background-size: cover;
+    height: 330px;
+    width: auto;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.cardtexta4 {
+    margin: 10px;
+    font-weight: bold;
+    font-size: 80%;
+}
+
+.cardsbloc2 {
+    display: flex;
+    flex-direction: column;
+    margin-left: 50px;
+    width: 40%;
+}
+
+.carda5 {
+    box-shadow: 0 0 10px 0 lightgrey;
+    border-radius: 15px;
+    height: 170px;
+    width: auto;
+    transition: 400ms ease;
+}
+
+.cardimagea5 {
+    background: url(/Images/Activites/4_small/Notre-Dame-de-la-Garde.jpg);
+    background-size: cover;
+    height: 130px;
+    width: auto;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.cardtexta5 {
+    margin: 10px;
+    font-weight: bold;
+    font-size: 80%;
+}
+
+.carda6 {
+    box-shadow: 0 0 10px 0 lightgrey;
+    border-radius: 15px;
+    height: 180px;
+    width: auto;
+    margin-top: 20px;
+    transition: 400ms ease;
+}
+
+.cardimagea6 {
+    background: url(/Images/Activites/4_small/Parc-Longchamp.jpg);
+    background-size: cover;
+    height: 140px;
+    width: auto;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.cardtexta6 {
+    margin: 10px;
+    font-weight: bold;
+    font-size: 80%;
+}
+
+.carda1:hover, .carda2:hover, .carda3:hover, .carda4:hover, .carda5:hover, .carda6:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 10px 0 black;
 }
 
 div > footer {
-    background-color: chartreuse;
+    background-color: var(--Background-color);
     padding: 20px;
-    grid-column-start: 1;
-    grid-column-end: 3;
-}
- 
-@media only screen 
-  and (max-width: 900px) and (min-width: 376px) 
-{
-    div > footer {
-        background-color: yellow;
-    }
 }
 
-@media screen 
-  and (max-device-width: 375px) 
- {
+#footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 85%;
+    height: auto;
+}
+
+.footer1 {
+    display: flex;
+    flex-direction: column;
+}
+
+.titlefooter {
+    font-weight: bold;
+    font-size: 80%;
+}
+
+.textfooter {
+    font-size: 70%;
+    line-height: 25px;
+    transition: 400ms ease;
+}
+
+.textfooter:hover {
+    color: rgb(0, 0, 255);
+    transform: scale(0.9);
+}
+
+@media screen and (max-width: 991px) and (min-width: 768px) {
+    
     div#container {
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
     }
 
-    div > header {
-        background-color: blue;
-    }
-
     div > article.article1 {
-        background-color: var(--Background-color);
-        grid-row-start: 3;
-        grid-row-end: 4;
-        grid-column-start: 1;
-        grid-column-end: 3;
-        margin: 0;
-        border-radius: 0;
-    }
-    
-    div > aside {
         background-color: var(--Background-color);
         grid-row-start: 4;
         grid-row-end: 5;
         grid-column-start: 1;
         grid-column-end: 3;
         margin: 0;
-        border-radius: 0;
+        border-radius: 15px;
     }
- }
+
+    #hebergements {
+        width: auto;
+    }
+    
+    .cardshebergements {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .card1, .card2, .card3, .card4, .card5, .card6 {
+        background-color: white;
+    }
+
+    div > aside {
+        background-color: var(--Background-color);
+        grid-row-start: 3;
+        grid-row-end: 4;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        margin: 0;
+        border-radius: 15px;
+    }
+
+    #populaire {
+        height: 520px;
+        width: 100%;
+    }  
+
+    .cardspopulaire {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        height: 500px;
+        width: auto;
+    }
+
+    .cardp1, .cardp2, .cardp3 {
+        height: 125px;
+        width: 400px;
+    }
+
+    .cardimagep1, .cardimagep2, .cardimagep3 {
+        width: 50%;
+    }
+
+    .cardtextp1 {
+        width: 50%;
+    }
+
+    .cardsactivity {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .cardsb1, .cardsb2 {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 100%;
+        margin: 0px;
+    }
+
+    .cardsbloc1 {
+        margin-left: 50px;
+    }
+
+    div > footer {
+        border-radius: 15px 15px 0 0;
+    }
+}
+
+@media screen and (max-width: 767px) {
+
+    body {
+        max-width: 767px;
+    }
+    
+    div#container {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    }
+
+    #navbar {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .Logo {
+        display: flex;
+        flex-direction: column;
+        width: 30%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #bouton {
+        border-bottom: var(--Second-color) solid 2px;
+        padding-bottom: 10px;
+        padding-top: 25px;
+        margin-left: 0%;
+    }
+
+    .Menubutton1:hover, .Menubutton1:focus {
+        border-top: none;
+        border-bottom: 2px solid var(--Main-color);
+    }
+
+    .Menubutton2:hover, .Menubutton2:focus {
+        border-top: none;
+        border-bottom: 2px solid var(--Main-color);
+    }
+
+    h2, h3 {
+        text-align: center;
+    }
+
+    .searchbar {
+        justify-content: center;
+    }
+
+    #filters {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: center;
+    }
+
+    div.filter1 {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .money {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        margin-right: 1px;
+        margin-left: 1px;
+        padding-top: 5px;
+        padding-right: 5px;
+        width: auto;
+        height: 23px;
+    }
+
+    .family {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        margin-right: 1px;
+        margin-left: 30px;
+        padding-top: 5px;
+        padding-right: 5px;
+        width: auto;
+        height: 23px;
+    }
+
+    .heart {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        margin-right: 1px;
+        margin-left: 1px;
+        padding-top: 5px;
+        padding-right: 5px;
+        max-width: 125px;
+        width: auto;
+        height: 23px;
+    }
+
+    .dog {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        margin-right: 1px;
+        margin-left: 1px;
+        padding-top: 5px;
+        padding-right: 5px;
+        max-width: 150px;
+        width: auto;
+        height: 23px;
+    }
+
+
+    .logements {
+        font-size: 70%;
+        text-align: center;
+    }
+
+    div > article.article1 {
+        background-color: white;
+        border-radius: 0;
+        height: 1050px;
+        margin-top: 5px;
+        border-radius: 15px;
+    }
+
+    #hebergements {
+        width: auto;
+    }
+
+    .cardshebergements {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        height: auto;
+        width: auto;
+    }
+
+    .card1, .card2, .card3 {
+        width: auto;
+        margin-bottom: 10px;
+    }
+
+    .card4, .card5, .card6 {
+        width: auto;
+        margin-bottom: 10px;
+    }
+
+    div > aside {
+        background-color: var(--Background-color);
+        margin: 0;
+        border-radius: 0px;
+    }
+
+    #populaire {
+        width: auto;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .cardspopulaire {
+        display: flex;
+        width: auto;
+        margin-left: 0;
+        margin-right: 0;
+    }
+ 
+    .cardp1, .cardp2, .cardp3 {
+        width: auto;
+    }
+
+    .cardimagep1, .cardimagep2, .cardimagep3 {
+        width: 50%;
+        margin: 4px;
+    }
+
+    .cardtextp1 {
+        width: 50%;
+    }
+
+    .descriptiontextp1 {
+        font-size: 80%;
+    }
+    
+    .description2textp1 {
+        font-size: 70%;
+    }
+
+    div > article.article2 {
+        height: 1300px;
+        padding-right: 25px;
+    }
+
+    .cardsactivity {
+        display: flex;
+        flex-direction: column;
+        height: 700px;
+    }
+
+    .cardsb1, .cardsb2 {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        width: 100%;
+        height: 400px;
+        margin-left: 0;
+    }
+
+    .cardsbloc1, .cardsbloc2 {
+        display: flex;
+        flex-direction: column;
+        margin-left: 0;
+        width: 100%;
+    }
+
+    .cardsb2 {
+        margin-top: 220px;
+    }
+   
+    .carda1, .carda2, .carda3, .carda4, .carda5, .carda6 {
+        height: 180px;
+        width: auto;
+        margin-left: 2px;
+        margin-bottom: 30px;
+        margin-top: 0px;
+    }
+
+    .cardimagea1, .cardimagea2, .cardimagea3, .cardimagea4, .cardimagea5, .cardimagea6 {
+        height: 140px;
+    }
+
+    #footer {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .textfooter {
+        text-align: center;
+    }
+}
